@@ -1,0 +1,787 @@
+{
+  "tool": "comp-diff",
+  "version": 1,
+  "createdAt": "2026-10-25T18:57:03.551Z",
+  "label": "desktop",
+  "comp": ".impeccable/mocks/decision/assigned-pavilion.png",
+  "build": ".impeccable/review/desktop.png",
+  "spec": ".impeccable/build/spec.json",
+  "compSize": "1672x941",
+  "buildSize": "1440x6746",
+  "align": "top",
+  "overall": 0.6005,
+  "verdict": "drift",
+  "scores": {
+    "overall": 0.6005,
+    "structure": 0.3428,
+    "color": 0.8644,
+    "colorIntersection": 0.7916,
+    "paletteMatch": 0.9036,
+    "detail": 0.5478,
+    "detailRaw": 0.6103,
+    "detailAdded": 0.125,
+    "bands": 0.85
+  },
+  "palette": {
+    "comp": [
+      {
+        "hex": "#f5f5f3",
+        "coverage": 0.578
+      },
+      {
+        "hex": "#d4c4ae",
+        "coverage": 0.2471
+      },
+      {
+        "hex": "#136e31",
+        "coverage": 0.0562
+      },
+      {
+        "hex": "#ae794a",
+        "coverage": 0.0482
+      },
+      {
+        "hex": "#e5ebcb",
+        "coverage": 0.0436
+      },
+      {
+        "hex": "#404b0c",
+        "coverage": 0.0269
+      }
+    ],
+    "build": [
+      {
+        "hex": "#f6f5f3",
+        "coverage": 0.6674
+      },
+      {
+        "hex": "#d8c7ae",
+        "coverage": 0.2092
+      },
+      {
+        "hex": "#e1efd5",
+        "coverage": 0.0406
+      },
+      {
+        "hex": "#0a7a38",
+        "coverage": 0.0349
+      },
+      {
+        "hex": "#c89060",
+        "coverage": 0.0265
+      },
+      {
+        "hex": "#d7e2b3",
+        "coverage": 0.0215
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "hero-background",
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 0.7035,
+      "kind": "plate",
+      "score": {
+        "overall": 0.6645,
+        "structure": 0.3308,
+        "color": 0.8473,
+        "colorIntersection": 0.7332,
+        "paletteMatch": 0.9088,
+        "detail": 0.7297,
+        "detailRaw": 0.7714,
+        "detailAdded": 0.0833,
+        "bands": 0.95
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 1672,
+          "h": 662
+        },
+        "build": {
+          "x": 0,
+          "y": 65,
+          "w": 1672,
+          "h": 597
+        }
+      }
+    },
+    {
+      "id": "nav-shell",
+      "x": 0.1184,
+      "y": 0.0393,
+      "w": 0.7554,
+      "h": 0.1148,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.5129,
+        "structure": 0.6993,
+        "color": 0.6569,
+        "colorIntersection": 0.4692,
+        "paletteMatch": 0.758,
+        "detail": 0.1918,
+        "detailRaw": 0.3272,
+        "detailAdded": 0.2708,
+        "bands": 0.3733
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 78,
+          "y": 0,
+          "w": 1185,
+          "h": 108
+        },
+        "build": {
+          "x": 97,
+          "y": 28,
+          "w": 1166,
+          "h": 80
+        }
+      }
+    },
+    {
+      "id": "nav-brand",
+      "x": 0.1561,
+      "y": 0.0489,
+      "w": 0.1166,
+      "h": 0.0882,
+      "kind": "image",
+      "score": {
+        "overall": 0.3294,
+        "structure": 0.4654,
+        "color": 0.7803,
+        "colorIntersection": 0.7,
+        "paletteMatch": 0.8236,
+        "detail": 0.0589,
+        "detailRaw": 0.0902,
+        "detailAdded": 0.0625,
+        "bands": 0.55
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 14,
+          "y": 3,
+          "w": 167,
+          "h": 80
+        },
+        "build": {
+          "x": 81,
+          "y": 19,
+          "w": 70,
+          "h": 64
+        }
+      }
+    },
+    {
+      "id": "nav-links",
+      "x": 0.2913,
+      "y": 0.0723,
+      "w": 0.3553,
+      "h": 0.0404,
+      "kind": "text",
+      "score": {
+        "overall": 0.4687,
+        "structure": 0.6774,
+        "color": 0.4189,
+        "colorIntersection": 0.2059,
+        "paletteMatch": 0.5337,
+        "detail": 0,
+        "detailRaw": 0.1398,
+        "detailAdded": 0.3958,
+        "bands": 0.2533
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 12,
+          "y": 0,
+          "w": 582,
+          "h": 38
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 594,
+          "h": 38
+        }
+      }
+    },
+    {
+      "id": "nav-cta",
+      "x": 0.7016,
+      "y": 0.0563,
+      "w": 0.1519,
+      "h": 0.0744,
+      "kind": "control",
+      "score": {
+        "overall": 0.3572,
+        "structure": 0.3336,
+        "color": 0.5276,
+        "colorIntersection": 0.1069,
+        "paletteMatch": 0.7542,
+        "detail": 0.1122,
+        "detailRaw": 0.2216,
+        "detailAdded": 0.2188,
+        "bands": 0.2833
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 254,
+          "h": 70
+        },
+        "build": {
+          "x": 19,
+          "y": 30,
+          "w": 235,
+          "h": 40
+        }
+      }
+    },
+    {
+      "id": "hero-title",
+      "x": 0.1077,
+      "y": 0.2264,
+      "w": 0.3553,
+      "h": 0.1413,
+      "kind": "text",
+      "score": {
+        "overall": 0.6685,
+        "structure": 0.5819,
+        "color": 0.8254,
+        "colorIntersection": 0.733,
+        "paletteMatch": 0.8751,
+        "detail": 0.5245,
+        "detailRaw": 0.5766,
+        "detailAdded": 0.1042,
+        "bands": 0.925
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 5,
+          "y": 0,
+          "w": 584,
+          "h": 133
+        },
+        "build": {
+          "x": 2,
+          "y": 0,
+          "w": 592,
+          "h": 133
+        }
+      }
+    },
+    {
+      "id": "hero-summary",
+      "x": 0.1089,
+      "y": 0.3804,
+      "w": 0.2901,
+      "h": 0.068,
+      "kind": "text",
+      "score": {
+        "overall": 0.4997,
+        "structure": 0.4305,
+        "color": 0.9074,
+        "colorIntersection": 0.8825,
+        "paletteMatch": 0.9208,
+        "detail": 0.2737,
+        "detailRaw": 0.3414,
+        "detailAdded": 0.1354,
+        "bands": 0.1657
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 3,
+          "y": 4,
+          "w": 452,
+          "h": 60
+        },
+        "build": {
+          "x": 1,
+          "y": 0,
+          "w": 433,
+          "h": 64
+        }
+      }
+    },
+    {
+      "id": "hero-cta",
+      "x": 0.1094,
+      "y": 0.4772,
+      "w": 0.2464,
+      "h": 0.0786,
+      "kind": "control",
+      "score": {
+        "overall": 0.5723,
+        "structure": 0.5583,
+        "color": 0.6581,
+        "colorIntersection": 0.4765,
+        "paletteMatch": 0.7559,
+        "detail": 0.4535,
+        "detailRaw": 0.5733,
+        "detailAdded": 0.2396,
+        "bands": 0.3143
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 412,
+          "h": 74
+        },
+        "build": {
+          "x": 0,
+          "y": 0,
+          "w": 412,
+          "h": 74
+        }
+      }
+    },
+    {
+      "id": "proof-since",
+      "x": 0.1065,
+      "y": 0.5887,
+      "w": 0.1053,
+      "h": 0.0701,
+      "kind": "text",
+      "score": {
+        "overall": 0.4463,
+        "structure": 0.4669,
+        "color": 0.6865,
+        "colorIntersection": 0.4091,
+        "paletteMatch": 0.8358,
+        "detail": 0.0319,
+        "detailRaw": 0.2611,
+        "detailAdded": 0.4583,
+        "bands": 0.3643
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 13,
+          "y": 11,
+          "w": 156,
+          "h": 31
+        },
+        "build": {
+          "x": 0,
+          "y": 4,
+          "w": 176,
+          "h": 62
+        }
+      }
+    },
+    {
+      "id": "proof-place",
+      "x": 0.2255,
+      "y": 0.5887,
+      "w": 0.1077,
+      "h": 0.0701,
+      "kind": "text",
+      "score": {
+        "overall": 0.5826,
+        "structure": 0.6449,
+        "color": 0.8103,
+        "colorIntersection": 0.665,
+        "paletteMatch": 0.8886,
+        "detail": 0.1058,
+        "detailRaw": 0.2621,
+        "detailAdded": 0.3125,
+        "bands": 0.4167
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 24,
+          "y": 12,
+          "w": 156,
+          "h": 30
+        },
+        "build": {
+          "x": 17,
+          "y": 3,
+          "w": 163,
+          "h": 40
+        }
+      }
+    },
+    {
+      "id": "proof-human",
+      "x": 0.3463,
+      "y": 0.5887,
+      "w": 0.1268,
+      "h": 0.0701,
+      "kind": "text",
+      "score": {
+        "overall": 0.4731,
+        "structure": 0.3847,
+        "color": 0.7772,
+        "colorIntersection": 0.6469,
+        "paletteMatch": 0.8473,
+        "detail": 0.1321,
+        "detailRaw": 0.3509,
+        "detailAdded": 0.4375,
+        "bands": 0.6667
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 33,
+          "y": 0,
+          "w": 179,
+          "h": 64
+        },
+        "build": {
+          "x": 14,
+          "y": 0,
+          "w": 198,
+          "h": 48
+        }
+      }
+    },
+    {
+      "id": "section-shell",
+      "x": 0,
+      "y": 0.6865,
+      "w": 1,
+      "h": 0.3135,
+      "kind": "chrome",
+      "score": {
+        "overall": 0.6621,
+        "structure": 0.7995,
+        "color": 0.8898,
+        "colorIntersection": 0.8147,
+        "paletteMatch": 0.9301,
+        "detail": 0.3221,
+        "detailRaw": 0.4315,
+        "detailAdded": 0.2188,
+        "bands": 0.5286
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 1672,
+          "h": 295
+        },
+        "build": {
+          "x": 154,
+          "y": 0,
+          "w": 1518,
+          "h": 232
+        }
+      }
+    },
+    {
+      "id": "section-label",
+      "x": 0.0915,
+      "y": 0.7694,
+      "w": 0.1615,
+      "h": 0.0191,
+      "kind": "text",
+      "score": {
+        "overall": 0.4364,
+        "structure": 0.3739,
+        "color": 0.7327,
+        "colorIntersection": 0.479,
+        "paletteMatch": 0.8694,
+        "detail": 0.2752,
+        "detailRaw": 0.5356,
+        "detailAdded": 0.5208,
+        "bands": 0.25
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 6,
+          "y": 6,
+          "w": 225,
+          "h": 9
+        },
+        "build": {
+          "x": 3,
+          "y": 0,
+          "w": 267,
+          "h": 14
+        }
+      }
+    },
+    {
+      "id": "section-title",
+      "x": 0.0915,
+      "y": 0.797,
+      "w": 0.2937,
+      "h": 0.1095,
+      "kind": "text",
+      "score": {
+        "overall": 0.456,
+        "structure": 0.2935,
+        "color": 0.7253,
+        "colorIntersection": 0.6759,
+        "paletteMatch": 0.7519,
+        "detail": 0.2962,
+        "detailRaw": 0.4368,
+        "detailAdded": 0.2813,
+        "bands": 0.835
+      },
+      "verdict": "contradicted",
+      "inkBox": {
+        "comp": {
+          "x": 5,
+          "y": 6,
+          "w": 486,
+          "h": 97
+        },
+        "build": {
+          "x": 3,
+          "y": 0,
+          "w": 488,
+          "h": 103
+        }
+      }
+    },
+    {
+      "id": "section-copy",
+      "x": 0.0927,
+      "y": 0.9033,
+      "w": 0.3086,
+      "h": 0.0553,
+      "kind": "text",
+      "score": {
+        "overall": 0.5678,
+        "structure": 0.7053,
+        "color": 0.8607,
+        "colorIntersection": 0.7895,
+        "paletteMatch": 0.899,
+        "detail": 0,
+        "detailRaw": 0.0129,
+        "detailAdded": 0.0833,
+        "bands": 0
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 2,
+          "y": 0,
+          "w": 514,
+          "h": 52
+        },
+        "build": {
+          "x": 1,
+          "y": 0,
+          "w": 220,
+          "h": 27
+        }
+      }
+    },
+    {
+      "id": "benefit-team",
+      "x": 0.4366,
+      "y": 0.796,
+      "w": 0.0855,
+      "h": 0.136,
+      "kind": "control",
+      "score": {
+        "overall": 0.6943,
+        "structure": 0.7814,
+        "color": 0.9396,
+        "colorIntersection": 0.8915,
+        "paletteMatch": 0.9655,
+        "detail": 0.0693,
+        "detailRaw": 0.163,
+        "detailAdded": 0.1875,
+        "bands": 0.3714
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 30,
+          "y": 42,
+          "w": 90,
+          "h": 86
+        },
+        "build": {
+          "x": 22,
+          "y": 0,
+          "w": 98,
+          "h": 69
+        }
+      }
+    },
+    {
+      "id": "benefit-plan",
+      "x": 0.5233,
+      "y": 0.796,
+      "w": 0.0855,
+      "h": 0.136,
+      "kind": "control",
+      "score": {
+        "overall": 0.6864,
+        "structure": 0.742,
+        "color": 0.9508,
+        "colorIntersection": 0.8958,
+        "paletteMatch": 0.9804,
+        "detail": 0.0984,
+        "detailRaw": 0.1818,
+        "detailAdded": 0.1667,
+        "bands": 0.52
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 32,
+          "y": 38,
+          "w": 93,
+          "h": 90
+        },
+        "build": {
+          "x": 23,
+          "y": 0,
+          "w": 98,
+          "h": 69
+        }
+      }
+    },
+    {
+      "id": "benefit-time",
+      "x": 0.61,
+      "y": 0.796,
+      "w": 0.0855,
+      "h": 0.136,
+      "kind": "control",
+      "score": {
+        "overall": 0.6268,
+        "structure": 0.6775,
+        "color": 0.9039,
+        "colorIntersection": 0.814,
+        "paletteMatch": 0.9523,
+        "detail": 0.0276,
+        "detailRaw": 0.1526,
+        "detailAdded": 0.25,
+        "bands": 0.3714
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 37,
+          "y": 38,
+          "w": 106,
+          "h": 90
+        },
+        "build": {
+          "x": 11,
+          "y": 0,
+          "w": 121,
+          "h": 68
+        }
+      }
+    },
+    {
+      "id": "benefit-results",
+      "x": 0.6968,
+      "y": 0.796,
+      "w": 0.0855,
+      "h": 0.136,
+      "kind": "control",
+      "score": {
+        "overall": 0.6601,
+        "structure": 0.7419,
+        "color": 0.8662,
+        "colorIntersection": 0.7507,
+        "paletteMatch": 0.9285,
+        "detail": 0.1153,
+        "detailRaw": 0.2091,
+        "detailAdded": 0.1875,
+        "bands": 0.5286
+      },
+      "verdict": "drift",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 38,
+          "w": 143,
+          "h": 90
+        },
+        "build": {
+          "x": 44,
+          "y": 27,
+          "w": 99,
+          "h": 47
+        }
+      }
+    },
+    {
+      "id": "patient-image",
+      "x": 0.7823,
+      "y": 0.6493,
+      "w": 0.2177,
+      "h": 0.3507,
+      "kind": "image",
+      "score": {
+        "overall": 0.4538,
+        "structure": 0.3908,
+        "color": 0.7913,
+        "colorIntersection": 0.6431,
+        "paletteMatch": 0.871,
+        "detail": 0.3957,
+        "detailRaw": 0.5051,
+        "detailAdded": 0.2188,
+        "bands": 0
+      },
+      "verdict": "missing",
+      "inkBox": {
+        "comp": {
+          "x": 0,
+          "y": 0,
+          "w": 364,
+          "h": 330
+        },
+        "build": {
+          "x": 1,
+          "y": 0,
+          "w": 363,
+          "h": 267
+        }
+      }
+    }
+  ],
+  "files": {
+    "sideBySide": "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/side-by-side.png",
+    "heatmap": "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/heatmap.png",
+    "regionFiles": [
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/hero-background.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/nav-shell.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/nav-brand.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/nav-links.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/nav-cta.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/hero-title.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/hero-summary.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/hero-cta.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/proof-since.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/proof-place.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/proof-human.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/section-shell.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/section-label.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/section-title.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/section-copy.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/benefit-team.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/benefit-plan.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/benefit-time.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/benefit-results.png",
+      "D:/0 - Git Hub Repositórios/Clinimed_Odontologia/.impeccable/review/diff/desktop/regions/patient-image.png"
+    ]
+  }
+}

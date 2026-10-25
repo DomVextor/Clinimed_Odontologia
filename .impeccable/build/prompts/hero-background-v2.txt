@@ -1,0 +1,7 @@
+Use case: photorealistic-natural
+Asset type: full-bleed hero background production plate for the approved Clinimed website composition
+Primary request: Create a new original photorealistic dental-clinic interior that matches the approved comp much more closely than the previous asset while remaining a fresh photograph. Preserve the reference crop’s exact visual idea: bright floor-to-ceiling windows on the left, yellow waiting chairs near center, a pale-wood and white reception desk on the right, indoor plants at the edges, and one monumental translucent deep-green glass arch sweeping from the upper center down behind the reception with a thin lime light edge.
+Input images: Image 1 is the approved composition crop and controls layout, scale, lighting, materials, and arch shape. Image 2 is the official Clinimed logo. Place the official tooth symbol, CLINIMED wordmark, ODONTOLOGIA line, and lime underline together as a physical dimensional sign on the reception wall at right, recognizable and proportionally faithful.
+Composition: extra-wide 2.53:1 landscape, edge to edge. Keep the left third calm and bright so semantic headline and CTA can be overlaid in HTML. Preserve the right-side reception and wall branding, but include no other text.
+Lighting and palette: warm daylight, luminous off-white, pale wood, deep emerald glass, one lime highlight, natural foliage.
+Constraints: no navigation, no buttons, no UI copy, no people, no PLUG branding, no blue/yellow identity, no watermark, no border, no card corners, no stock-photo tooth close-up.

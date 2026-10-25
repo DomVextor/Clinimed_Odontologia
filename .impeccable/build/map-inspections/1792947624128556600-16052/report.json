@@ -1,0 +1,1417 @@
+{
+  "tool": "comp-spec inspect-map",
+  "version": 1,
+  "referenceOnly": true,
+  "stateChanged": false,
+  "comp": ".impeccable/mocks/decision/assigned-pavilion.png",
+  "compSize": {
+    "width": 1672,
+    "height": 941
+  },
+  "inputRegionCount": 20,
+  "regions": [
+    {
+      "id": "hero-background",
+      "kind": "plate",
+      "note": "full-bleed sunlit dental clinic interior with pale wood reception, plants and one sweeping translucent deep-green glass arch with a lime light edge; no UI text",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.7035
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 662
+      },
+      "aspect": 2.5257,
+      "palette": [
+        {
+          "hex": "#f4f5f2",
+          "coverage": 0.457
+        },
+        {
+          "hex": "#d4c4ae",
+          "coverage": 0.3724
+        },
+        {
+          "hex": "#146d31",
+          "coverage": 0.0826
+        },
+        {
+          "hex": "#9c6d3e",
+          "coverage": 0.0479
+        },
+        {
+          "hex": "#e3eac9",
+          "coverage": 0.0402
+        }
+      ],
+      "detail": {
+        "energy": 40.7701
+      },
+      "medium": "raster",
+      "plate": "assets/plates/hero-background.png",
+      "text": null,
+      "number": 1,
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 314422,
+        "totalPixels": 1106864,
+        "remainingPixels": 792442,
+        "excludedFraction": 0.28406561239682565,
+        "fullyExcluded": false,
+        "regions": [
+          {
+            "id": "nav-shell",
+            "kind": "chrome",
+            "cropPx": {
+              "x": 198,
+              "y": 37,
+              "w": 1263,
+              "h": 108
+            },
+            "pixels": 136404
+          },
+          {
+            "id": "nav-links",
+            "kind": "text",
+            "cropPx": {
+              "x": 487,
+              "y": 68,
+              "w": 594,
+              "h": 38
+            },
+            "pixels": 22572
+          },
+          {
+            "id": "nav-cta",
+            "kind": "control",
+            "cropPx": {
+              "x": 1173,
+              "y": 53,
+              "w": 254,
+              "h": 70
+            },
+            "pixels": 17780
+          },
+          {
+            "id": "hero-title",
+            "kind": "text",
+            "cropPx": {
+              "x": 180,
+              "y": 213,
+              "w": 594,
+              "h": 133
+            },
+            "pixels": 79002
+          },
+          {
+            "id": "hero-summary",
+            "kind": "text",
+            "cropPx": {
+              "x": 182,
+              "y": 358,
+              "w": 485,
+              "h": 64
+            },
+            "pixels": 31040
+          },
+          {
+            "id": "hero-cta",
+            "kind": "control",
+            "cropPx": {
+              "x": 183,
+              "y": 449,
+              "w": 412,
+              "h": 74
+            },
+            "pixels": 30488
+          },
+          {
+            "id": "proof-since",
+            "kind": "text",
+            "cropPx": {
+              "x": 178,
+              "y": 554,
+              "w": 176,
+              "h": 66
+            },
+            "pixels": 11616
+          },
+          {
+            "id": "proof-place",
+            "kind": "text",
+            "cropPx": {
+              "x": 377,
+              "y": 554,
+              "w": 180,
+              "h": 66
+            },
+            "pixels": 11880
+          },
+          {
+            "id": "proof-human",
+            "kind": "text",
+            "cropPx": {
+              "x": 579,
+              "y": 554,
+              "w": 212,
+              "h": 66
+            },
+            "pixels": 13992
+          }
+        ],
+        "ignoredContainers": [
+          "section-shell"
+        ]
+      },
+      "cropPath": "region-1.png",
+      "referencePath": "reference-1.png"
+    },
+    {
+      "id": "nav-shell",
+      "kind": "chrome",
+      "note": "single floating translucent white glass navigation bubble",
+      "grid": null,
+      "box": {
+        "x": 0.1184,
+        "y": 0.0393,
+        "w": 0.7554,
+        "h": 0.1148
+      },
+      "px": {
+        "x": 198,
+        "y": 37,
+        "w": 1263,
+        "h": 108
+      },
+      "aspect": 11.6944,
+      "palette": [
+        {
+          "hex": "#e3dec8",
+          "coverage": 0.3544
+        },
+        {
+          "hex": "#f6f8f5",
+          "coverage": 0.3314
+        },
+        {
+          "hex": "#a0c29b",
+          "coverage": 0.1588
+        },
+        {
+          "hex": "#09722f",
+          "coverage": 0.0965
+        },
+        {
+          "hex": "#d9edc2",
+          "coverage": 0.0589
+        }
+      ],
+      "detail": {
+        "energy": 29.6866
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "flags": [
+        {
+          "id": "painted-pixels",
+          "message": "Looks painted: 18 colours beyond its two main tones and soft shading across 46% of it. Drawn in code, this becomes a flat copy."
+        }
+      ],
+      "number": 2,
+      "cropPath": "region-2.png"
+    },
+    {
+      "id": "nav-brand",
+      "kind": "image",
+      "note": "official Clinimed Odontologia logo with tooth symbol and lime underline",
+      "grid": null,
+      "box": {
+        "x": 0.1561,
+        "y": 0.0489,
+        "w": 0.1166,
+        "h": 0.0882
+      },
+      "px": {
+        "x": 261,
+        "y": 46,
+        "w": 195,
+        "h": 83
+      },
+      "aspect": 2.3494,
+      "palette": [
+        {
+          "hex": "#f6f7f7",
+          "coverage": 0.8134
+        },
+        {
+          "hex": "#0a4327",
+          "coverage": 0.1093
+        },
+        {
+          "hex": "#0b642c",
+          "coverage": 0.0345
+        },
+        {
+          "hex": "#9cb7ad",
+          "coverage": 0.0267
+        },
+        {
+          "hex": "#0c2a15",
+          "coverage": 0.016
+        }
+      ],
+      "detail": {
+        "energy": 33.2589
+      },
+      "medium": "raster",
+      "plate": "assets/plates/nav-brand.png",
+      "text": null,
+      "number": 3,
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 16185,
+        "totalPixels": 16185,
+        "remainingPixels": 0,
+        "excludedFraction": 1.0,
+        "fullyExcluded": true,
+        "regions": [
+          {
+            "id": "nav-shell",
+            "kind": "chrome",
+            "cropPx": {
+              "x": 0,
+              "y": 0,
+              "w": 195,
+              "h": 83
+            },
+            "pixels": 16185
+          }
+        ],
+        "ignoredContainers": []
+      },
+      "cropPath": "region-3.png",
+      "referencePath": "reference-3.png"
+    },
+    {
+      "id": "nav-links",
+      "kind": "text",
+      "note": "desktop navigation labels from Início through Contatos in one horizontal row",
+      "grid": null,
+      "box": {
+        "x": 0.2913,
+        "y": 0.0723,
+        "w": 0.3553,
+        "h": 0.0404
+      },
+      "px": {
+        "x": 487,
+        "y": 68,
+        "w": 594,
+        "h": 38
+      },
+      "aspect": 15.6316,
+      "palette": [
+        {
+          "hex": "#9fc199",
+          "coverage": 0.3231
+        },
+        {
+          "hex": "#f0f4e7",
+          "coverage": 0.2755
+        },
+        {
+          "hex": "#e6dbc9",
+          "coverage": 0.2486
+        },
+        {
+          "hex": "#cee2ba",
+          "coverage": 0.1369
+        },
+        {
+          "hex": "#153321",
+          "coverage": 0.0159
+        }
+      ],
+      "detail": {
+        "energy": 32.8341
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "flags": [
+        {
+          "id": "painted-pixels",
+          "message": "Looks painted: 19 colours beyond its two main tones and soft shading across 46% of it. Drawn in code, this becomes a flat copy."
+        }
+      ],
+      "number": 4,
+      "cropPath": "region-4.png"
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "note": "deep-green rounded WhatsApp control labeled Agende sua avaliação",
+      "grid": null,
+      "box": {
+        "x": 0.7016,
+        "y": 0.0563,
+        "w": 0.1519,
+        "h": 0.0744
+      },
+      "px": {
+        "x": 1173,
+        "y": 53,
+        "w": 254,
+        "h": 70
+      },
+      "aspect": 3.6286,
+      "palette": [
+        {
+          "hex": "#08722f",
+          "coverage": 0.6737
+        },
+        {
+          "hex": "#d7e2c4",
+          "coverage": 0.1942
+        },
+        {
+          "hex": "#14602e",
+          "coverage": 0.0523
+        },
+        {
+          "hex": "#0f892b",
+          "coverage": 0.0442
+        },
+        {
+          "hex": "#44e088",
+          "coverage": 0.0356
+        }
+      ],
+      "detail": {
+        "energy": 27.4086
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 5,
+      "cropPath": "region-5.png"
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "note": "large two-line dark-green headline Seu sorriso, cuidado por inteiro",
+      "grid": null,
+      "box": {
+        "x": 0.1077,
+        "y": 0.2264,
+        "w": 0.3553,
+        "h": 0.1413
+      },
+      "px": {
+        "x": 180,
+        "y": 213,
+        "w": 594,
+        "h": 133
+      },
+      "aspect": 4.4662,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.6907
+        },
+        {
+          "hex": "#09612d",
+          "coverage": 0.1303
+        },
+        {
+          "hex": "#082d23",
+          "coverage": 0.0738
+        },
+        {
+          "hex": "#d8d5cd",
+          "coverage": 0.0652
+        },
+        {
+          "hex": "#09782d",
+          "coverage": 0.04
+        }
+      ],
+      "detail": {
+        "energy": 62.5293
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 6,
+      "cropPath": "region-6.png"
+    },
+    {
+      "id": "hero-summary",
+      "kind": "text",
+      "note": "two-line charcoal summary about a multidisciplinary clinic with more than 40 procedures",
+      "grid": null,
+      "box": {
+        "x": 0.1089,
+        "y": 0.3804,
+        "w": 0.2901,
+        "h": 0.068
+      },
+      "px": {
+        "x": 182,
+        "y": 358,
+        "w": 485,
+        "h": 64
+      },
+      "aspect": 7.5781,
+      "palette": [
+        {
+          "hex": "#f7f7f6",
+          "coverage": 0.8125
+        },
+        {
+          "hex": "#3e4a4b",
+          "coverage": 0.0874
+        },
+        {
+          "hex": "#a8afb0",
+          "coverage": 0.0629
+        },
+        {
+          "hex": "#747a7b",
+          "coverage": 0.0302
+        },
+        {
+          "hex": "#232b31",
+          "coverage": 0.0071
+        }
+      ],
+      "detail": {
+        "energy": 73.2298
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 7,
+      "cropPath": "region-7.png"
+    },
+    {
+      "id": "hero-cta",
+      "kind": "control",
+      "note": "large deep-green rounded WhatsApp control labeled Agendar pelo WhatsApp",
+      "grid": null,
+      "box": {
+        "x": 0.1094,
+        "y": 0.4772,
+        "w": 0.2464,
+        "h": 0.0786
+      },
+      "px": {
+        "x": 183,
+        "y": 449,
+        "w": 412,
+        "h": 74
+      },
+      "aspect": 5.5676,
+      "palette": [
+        {
+          "hex": "#0a6f36",
+          "coverage": 0.5887
+        },
+        {
+          "hex": "#138a30",
+          "coverage": 0.2114
+        },
+        {
+          "hex": "#f3f8f1",
+          "coverage": 0.1501
+        },
+        {
+          "hex": "#09bd58",
+          "coverage": 0.0374
+        },
+        {
+          "hex": "#43975f",
+          "coverage": 0.0124
+        }
+      ],
+      "detail": {
+        "energy": 37.4992
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 8,
+      "cropPath": "region-8.png"
+    },
+    {
+      "id": "proof-since",
+      "kind": "text",
+      "note": "calendar icon with Desde 2010 and short supporting copy",
+      "grid": null,
+      "box": {
+        "x": 0.1065,
+        "y": 0.5887,
+        "w": 0.1053,
+        "h": 0.0701
+      },
+      "px": {
+        "x": 178,
+        "y": 554,
+        "w": 176,
+        "h": 66
+      },
+      "aspect": 2.6667,
+      "palette": [
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.7797
+        },
+        {
+          "hex": "#e7f7da",
+          "coverage": 0.1542
+        },
+        {
+          "hex": "#b2bbb9",
+          "coverage": 0.0299
+        },
+        {
+          "hex": "#778182",
+          "coverage": 0.0218
+        },
+        {
+          "hex": "#0c1513",
+          "coverage": 0.0145
+        }
+      ],
+      "detail": {
+        "energy": 22.3742
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 9,
+      "cropPath": "region-9.png"
+    },
+    {
+      "id": "proof-place",
+      "kind": "text",
+      "note": "location icon with Votuporanga SP and short supporting copy",
+      "grid": null,
+      "box": {
+        "x": 0.2255,
+        "y": 0.5887,
+        "w": 0.1077,
+        "h": 0.0701
+      },
+      "px": {
+        "x": 377,
+        "y": 554,
+        "w": 180,
+        "h": 66
+      },
+      "aspect": 2.7273,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.758
+        },
+        {
+          "hex": "#e7f7da",
+          "coverage": 0.1707
+        },
+        {
+          "hex": "#7e8c89",
+          "coverage": 0.0313
+        },
+        {
+          "hex": "#c4cecd",
+          "coverage": 0.0235
+        },
+        {
+          "hex": "#0b1613",
+          "coverage": 0.0164
+        }
+      ],
+      "detail": {
+        "energy": 22.9336
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 10,
+      "cropPath": "region-10.png"
+    },
+    {
+      "id": "proof-human",
+      "kind": "text",
+      "note": "heart icon with Atendimento humanizado and short supporting copy",
+      "grid": null,
+      "box": {
+        "x": 0.3463,
+        "y": 0.5887,
+        "w": 0.1268,
+        "h": 0.0701
+      },
+      "px": {
+        "x": 579,
+        "y": 554,
+        "w": 212,
+        "h": 66
+      },
+      "aspect": 3.2121,
+      "palette": [
+        {
+          "hex": "#eef2e1",
+          "coverage": 0.5435
+        },
+        {
+          "hex": "#dcd0c5",
+          "coverage": 0.3173
+        },
+        {
+          "hex": "#8c9290",
+          "coverage": 0.0578
+        },
+        {
+          "hex": "#c5b19b",
+          "coverage": 0.0494
+        },
+        {
+          "hex": "#0d1010",
+          "coverage": 0.032
+        }
+      ],
+      "detail": {
+        "energy": 32.4019
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 11,
+      "cropPath": "region-11.png"
+    },
+    {
+      "id": "section-shell",
+      "kind": "chrome",
+      "note": "wide off-white next-section surface with one smooth rising curved upper edge and a slim green-lime rule",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0,
+        "y": 0.6865,
+        "w": 1,
+        "h": 0.3135
+      },
+      "px": {
+        "x": 0,
+        "y": 646,
+        "w": 1672,
+        "h": 295
+      },
+      "aspect": 5.6678,
+      "palette": [
+        {
+          "hex": "#f6f6f3",
+          "coverage": 0.8402
+        },
+        {
+          "hex": "#e4efd8",
+          "coverage": 0.0575
+        },
+        {
+          "hex": "#bc8057",
+          "coverage": 0.0475
+        },
+        {
+          "hex": "#a8caa9",
+          "coverage": 0.0309
+        },
+        {
+          "hex": "#d4cbc0",
+          "coverage": 0.0239
+        }
+      ],
+      "detail": {
+        "energy": 31.8246
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "flags": [
+        {
+          "id": "painted-pixels",
+          "message": "Looks painted: 36 colours beyond its two main tones and soft shading across 49% of it. Drawn in code, this becomes a flat copy."
+        }
+      ],
+      "number": 12,
+      "cropPath": "region-12.png"
+    },
+    {
+      "id": "section-label",
+      "kind": "text",
+      "note": "small tracked green label Nossos tratamentos",
+      "grid": null,
+      "box": {
+        "x": 0.0915,
+        "y": 0.7694,
+        "w": 0.1615,
+        "h": 0.0191
+      },
+      "px": {
+        "x": 153,
+        "y": 724,
+        "w": 270,
+        "h": 18
+      },
+      "aspect": 15,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.8685
+        },
+        {
+          "hex": "#bfe8c3",
+          "coverage": 0.0648
+        },
+        {
+          "hex": "#88c992",
+          "coverage": 0.0611
+        },
+        {
+          "hex": "#68c378",
+          "coverage": 0.0056
+        }
+      ],
+      "detail": {
+        "energy": 27.0675
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 13,
+      "cropPath": "region-13.png"
+    },
+    {
+      "id": "section-title",
+      "kind": "text",
+      "note": "large two-line dark-green heading Cuidado completo, no seu tempo",
+      "grid": null,
+      "box": {
+        "x": 0.0915,
+        "y": 0.797,
+        "w": 0.2937,
+        "h": 0.1095
+      },
+      "px": {
+        "x": 153,
+        "y": 750,
+        "w": 491,
+        "h": 103
+      },
+      "aspect": 4.767,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.6683
+        },
+        {
+          "hex": "#0a7a2e",
+          "coverage": 0.1188
+        },
+        {
+          "hex": "#092120",
+          "coverage": 0.1054
+        },
+        {
+          "hex": "#093121",
+          "coverage": 0.0844
+        },
+        {
+          "hex": "#90a29d",
+          "coverage": 0.0231
+        }
+      ],
+      "detail": {
+        "energy": 66.101
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 14,
+      "cropPath": "region-14.png"
+    },
+    {
+      "id": "section-copy",
+      "kind": "text",
+      "note": "short charcoal paragraph about integrated planning and care",
+      "grid": null,
+      "box": {
+        "x": 0.0927,
+        "y": 0.9033,
+        "w": 0.3086,
+        "h": 0.0553
+      },
+      "px": {
+        "x": 155,
+        "y": 850,
+        "w": 516,
+        "h": 52
+      },
+      "aspect": 9.9231,
+      "palette": [
+        {
+          "hex": "#f7f7f6",
+          "coverage": 0.8339
+        },
+        {
+          "hex": "#565b5b",
+          "coverage": 0.0551
+        },
+        {
+          "hex": "#c7c9c8",
+          "coverage": 0.0466
+        },
+        {
+          "hex": "#919393",
+          "coverage": 0.0387
+        },
+        {
+          "hex": "#0a7c2f",
+          "coverage": 0.0256
+        }
+      ],
+      "detail": {
+        "energy": 36.1194
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 15,
+      "cropPath": "region-15.png"
+    },
+    {
+      "id": "benefit-team",
+      "kind": "control",
+      "note": "quiet benefit item with people icon and Equipe especializada",
+      "grid": null,
+      "box": {
+        "x": 0.4366,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "px": {
+        "x": 730,
+        "y": 749,
+        "w": 143,
+        "h": 128
+      },
+      "aspect": 1.1172,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.8318
+        },
+        {
+          "hex": "#e6f7da",
+          "coverage": 0.1267
+        },
+        {
+          "hex": "#abaeae",
+          "coverage": 0.019
+        },
+        {
+          "hex": "#666c6e",
+          "coverage": 0.015
+        },
+        {
+          "hex": "#0a3618",
+          "coverage": 0.0075
+        }
+      ],
+      "detail": {
+        "energy": 10.9691
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 16,
+      "cropPath": "region-16.png"
+    },
+    {
+      "id": "benefit-plan",
+      "kind": "control",
+      "note": "quiet benefit item with planning icon and Planejamento integrado",
+      "grid": null,
+      "box": {
+        "x": 0.5233,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "px": {
+        "x": 875,
+        "y": 749,
+        "w": 143,
+        "h": 128
+      },
+      "aspect": 1.1172,
+      "palette": [
+        {
+          "hex": "#f8f8f6",
+          "coverage": 0.832
+        },
+        {
+          "hex": "#e7f8db",
+          "coverage": 0.1205
+        },
+        {
+          "hex": "#555b5b",
+          "coverage": 0.019
+        },
+        {
+          "hex": "#818884",
+          "coverage": 0.0185
+        },
+        {
+          "hex": "#0e4321",
+          "coverage": 0.01
+        }
+      ],
+      "detail": {
+        "energy": 12.1619
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 17,
+      "cropPath": "region-17.png"
+    },
+    {
+      "id": "benefit-time",
+      "kind": "control",
+      "note": "quiet benefit item with clock icon and Mais praticidade para sua rotina",
+      "grid": null,
+      "box": {
+        "x": 0.61,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "px": {
+        "x": 1020,
+        "y": 749,
+        "w": 143,
+        "h": 128
+      },
+      "aspect": 1.1172,
+      "palette": [
+        {
+          "hex": "#f8f8f5",
+          "coverage": 0.8004
+        },
+        {
+          "hex": "#e7f8dc",
+          "coverage": 0.1399
+        },
+        {
+          "hex": "#565e5e",
+          "coverage": 0.0274
+        },
+        {
+          "hex": "#8d9290",
+          "coverage": 0.0219
+        },
+        {
+          "hex": "#bfc5c3",
+          "coverage": 0.0105
+        }
+      ],
+      "detail": {
+        "energy": 13.3521
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 18,
+      "cropPath": "region-18.png"
+    },
+    {
+      "id": "benefit-results",
+      "kind": "control",
+      "note": "quiet benefit item with care icon and Resultados que acompanham você",
+      "grid": null,
+      "box": {
+        "x": 0.6968,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "px": {
+        "x": 1165,
+        "y": 749,
+        "w": 143,
+        "h": 128
+      },
+      "aspect": 1.1172,
+      "palette": [
+        {
+          "hex": "#f8f8f4",
+          "coverage": 0.8205
+        },
+        {
+          "hex": "#e8f8dd",
+          "coverage": 0.1321
+        },
+        {
+          "hex": "#505958",
+          "coverage": 0.0219
+        },
+        {
+          "hex": "#adaead",
+          "coverage": 0.0174
+        },
+        {
+          "hex": "#082f13",
+          "coverage": 0.008
+        }
+      ],
+      "detail": {
+        "energy": 12.5737
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 19,
+      "cropPath": "region-19.png"
+    },
+    {
+      "id": "patient-image",
+      "kind": "image",
+      "note": "photographic patient reclining in a green dental chair, naturally lit and cropped by the right and lower edges",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.7823,
+        "y": 0.6493,
+        "w": 0.2177,
+        "h": 0.3507
+      },
+      "px": {
+        "x": 1308,
+        "y": 611,
+        "w": 364,
+        "h": 330
+      },
+      "aspect": 1.103,
+      "palette": [
+        {
+          "hex": "#e4e8e1",
+          "coverage": 0.5349
+        },
+        {
+          "hex": "#bb8056",
+          "coverage": 0.2603
+        },
+        {
+          "hex": "#392415",
+          "coverage": 0.088
+        },
+        {
+          "hex": "#efcdae",
+          "coverage": 0.0617
+        },
+        {
+          "hex": "#160d0b",
+          "coverage": 0.0552
+        }
+      ],
+      "detail": {
+        "energy": 15.2025
+      },
+      "medium": "raster",
+      "plate": "assets/plates/patient-image.png",
+      "text": null,
+      "number": 20,
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 0,
+        "totalPixels": 120120,
+        "remainingPixels": 120120,
+        "excludedFraction": 0.0,
+        "fullyExcluded": false,
+        "regions": [],
+        "ignoredContainers": [
+          "section-shell"
+        ]
+      },
+      "cropPath": "region-20.png",
+      "referencePath": "reference-20.png"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "foreground-mask",
+      "regionId": "hero-background",
+      "message": "nav-shell, nav-links, nav-cta, hero-title, hero-summary, hero-cta, proof-since, proof-place, proof-human exclude 28.4% of this reference. Check that the excluded pixels contain foreground, not artwork between separate text elements. Split overly broad foreground bounds; review grouping must not change geometry."
+    },
+    {
+      "severity": "error",
+      "code": "fully-masked",
+      "regionId": "nav-brand",
+      "message": "reference for nav-brand has no visible pixels after excluding nav-shell; correct the overlapping region geometry or container roles in the comp spec before evaluating this asset"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-background: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region section-shell: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region patient-image: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "hero-background",
+      "b": "nav-shell",
+      "pixels": 136404.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "nav-brand",
+      "pixels": 16185.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "nav-links",
+      "pixels": 22572.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "nav-cta",
+      "pixels": 17780.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "hero-title",
+      "pixels": 79002.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "hero-summary",
+      "pixels": 31040.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "hero-cta",
+      "pixels": 30488.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "proof-since",
+      "pixels": 11616.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "proof-place",
+      "pixels": 11880.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "proof-human",
+      "pixels": 13992.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-background",
+      "b": "section-shell",
+      "pixels": 26752.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-background",
+      "b": "patient-image",
+      "pixels": 18564.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "nav-shell",
+      "b": "nav-brand",
+      "pixels": 16185.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "nav-shell",
+      "b": "nav-links",
+      "pixels": 22572.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "nav-shell",
+      "b": "nav-cta",
+      "pixels": 17780.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "section-shell",
+      "b": "section-label",
+      "pixels": 4860.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "section-title",
+      "pixels": 50573.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "section-copy",
+      "pixels": 26832.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "benefit-team",
+      "pixels": 18304.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "benefit-plan",
+      "pixels": 18304.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "benefit-time",
+      "pixels": 18304.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "benefit-results",
+      "pixels": 18304.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-shell",
+      "b": "patient-image",
+      "pixels": 107380.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "section-title",
+      "b": "section-copy",
+      "pixels": 1467.0,
+      "relationship": "overlapping elements"
+    }
+  ],
+  "reviewGroups": {},
+  "uncoveredInkCells": [],
+  "comparisonSheets": [
+    {
+      "path": "comparison-1.png",
+      "regionIds": [
+        "nav-brand",
+        "hero-background"
+      ]
+    }
+  ]
+}

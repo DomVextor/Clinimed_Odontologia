@@ -1,0 +1,5 @@
+Use case: photorealistic-natural
+Asset type: website production plate for the approved Clinimed composition
+Primary request: Create a new original photograph inspired by the reference crop, not a pixel recreation. Show a different adult Brazilian woman reclining comfortably in a deep-green dental chair, viewed from the same low three-quarter angle, smiling naturally and looking upward. Keep the subject on the right half and leave a softly blurred bright clinic background on the left. Use different facial features, hairstyle, clothing folds, chair details, and background objects from the reference while preserving the same overall scale, crop, daylight, warm wood accent, off-white ground, forest green, and calm optimistic mood.
+Composition: landscape near-square crop; head and shoulders on the right, chair visible behind, generous soft negative space to the left, intentionally cropped at the right and lower edges.
+Constraints: photorealistic, anatomically natural teeth and hands, no text, no logos, no UI, no border, no watermark, no exaggerated perfect smile, no visible procedure in progress.

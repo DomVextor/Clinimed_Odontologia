@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 3,
+  "stage": "components",
+  "id": "components",
+  "title": "Plan and asset review · index.html",
+  "comp": {
+    "path": ".impeccable/mocks/decision/assigned-pavilion.png",
+    "width": 1672,
+    "height": 941
+  },
+  "specSha256": "01d0bcc176a7f7d179d6e23f3ddbcf2d1e02f88d984ce50f879f5a9b9a8e16e2",
+  "components": [
+    {
+      "id": "hero-background",
+      "name": "Hero background",
+      "kind": "plate",
+      "role": "asset",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.7035
+      },
+      "note": "full-bleed sunlit dental clinic interior with pale wood reception, plants and one sweeping translucent deep-green glass arch with a lime light edge; no UI text",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/hero-background.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "nav-brand",
+      "name": "Nav brand",
+      "kind": "image",
+      "role": "asset",
+      "box": {
+        "x": 0.1561,
+        "y": 0.0489,
+        "w": 0.1166,
+        "h": 0.0882
+      },
+      "note": "official Clinimed Odontologia logo with tooth symbol and lime underline",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/nav-brand.png"
+      },
+      "dependencies": []
+    },
+    {
+      "id": "patient-image",
+      "name": "Patient image",
+      "kind": "image",
+      "role": "asset",
+      "box": {
+        "x": 0.7823,
+        "y": 0.6493,
+        "w": 0.2177,
+        "h": 0.3507
+      },
+      "note": "photographic patient reclining in a green dental chair, naturally lit and cropped by the right and lower edges",
+      "medium": "raster",
+      "preview": {
+        "kind": "image",
+        "path": "assets/plates/patient-image.png"
+      },
+      "dependencies": []
+    }
+  ],
+  "codeRegions": [
+    {
+      "id": "nav-shell",
+      "name": "Nav shell",
+      "kind": "chrome",
+      "box": {
+        "x": 0.1184,
+        "y": 0.0393,
+        "w": 0.7554,
+        "h": 0.1148
+      },
+      "note": "single floating translucent white glass navigation bubble"
+    },
+    {
+      "id": "nav-links",
+      "name": "Nav links",
+      "kind": "text",
+      "box": {
+        "x": 0.2913,
+        "y": 0.0723,
+        "w": 0.3553,
+        "h": 0.0404
+      },
+      "note": "desktop navigation labels from Início through Contatos in one horizontal row"
+    },
+    {
+      "id": "nav-cta",
+      "name": "Nav cta",
+      "kind": "control",
+      "box": {
+        "x": 0.7016,
+        "y": 0.0563,
+        "w": 0.1519,
+        "h": 0.0744
+      },
+      "note": "deep-green rounded WhatsApp control labeled Agende sua avaliação"
+    },
+    {
+      "id": "hero-title",
+      "name": "Hero title",
+      "kind": "text",
+      "box": {
+        "x": 0.1077,
+        "y": 0.2264,
+        "w": 0.3553,
+        "h": 0.1413
+      },
+      "note": "large two-line dark-green headline Seu sorriso, cuidado por inteiro"
+    },
+    {
+      "id": "hero-summary",
+      "name": "Hero summary",
+      "kind": "text",
+      "box": {
+        "x": 0.1089,
+        "y": 0.3804,
+        "w": 0.2901,
+        "h": 0.068
+      },
+      "note": "two-line charcoal summary about a multidisciplinary clinic with more than 40 procedures"
+    },
+    {
+      "id": "hero-cta",
+      "name": "Hero cta",
+      "kind": "control",
+      "box": {
+        "x": 0.1094,
+        "y": 0.4772,
+        "w": 0.2464,
+        "h": 0.0786
+      },
+      "note": "large deep-green rounded WhatsApp control labeled Agendar pelo WhatsApp"
+    },
+    {
+      "id": "proof-since",
+      "name": "Proof since",
+      "kind": "text",
+      "box": {
+        "x": 0.1065,
+        "y": 0.5887,
+        "w": 0.1053,
+        "h": 0.0701
+      },
+      "note": "calendar icon with Desde 2010 and short supporting copy"
+    },
+    {
+      "id": "proof-place",
+      "name": "Proof place",
+      "kind": "text",
+      "box": {
+        "x": 0.2255,
+        "y": 0.5887,
+        "w": 0.1077,
+        "h": 0.0701
+      },
+      "note": "location icon with Votuporanga SP and short supporting copy"
+    },
+    {
+      "id": "proof-human",
+      "name": "Proof human",
+      "kind": "text",
+      "box": {
+        "x": 0.3463,
+        "y": 0.5887,
+        "w": 0.1268,
+        "h": 0.0701
+      },
+      "note": "heart icon with Atendimento humanizado and short supporting copy"
+    },
+    {
+      "id": "section-shell",
+      "name": "Section shell",
+      "kind": "chrome",
+      "box": {
+        "x": 0,
+        "y": 0.6865,
+        "w": 1,
+        "h": 0.3135
+      },
+      "note": "wide off-white next-section surface with one smooth rising curved upper edge and a slim green-lime rule"
+    },
+    {
+      "id": "section-label",
+      "name": "Section label",
+      "kind": "text",
+      "box": {
+        "x": 0.0915,
+        "y": 0.7694,
+        "w": 0.1615,
+        "h": 0.0191
+      },
+      "note": "small tracked green label Nossos tratamentos"
+    },
+    {
+      "id": "section-title",
+      "name": "Section title",
+      "kind": "text",
+      "box": {
+        "x": 0.0915,
+        "y": 0.797,
+        "w": 0.2937,
+        "h": 0.1095
+      },
+      "note": "large two-line dark-green heading Cuidado completo, no seu tempo"
+    },
+    {
+      "id": "section-copy",
+      "name": "Section copy",
+      "kind": "text",
+      "box": {
+        "x": 0.0927,
+        "y": 0.9033,
+        "w": 0.3086,
+        "h": 0.0553
+      },
+      "note": "short charcoal paragraph about integrated planning and care"
+    },
+    {
+      "id": "benefit-team",
+      "name": "Benefit team",
+      "kind": "control",
+      "box": {
+        "x": 0.4366,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "note": "quiet benefit item with people icon and Equipe especializada"
+    },
+    {
+      "id": "benefit-plan",
+      "name": "Benefit plan",
+      "kind": "control",
+      "box": {
+        "x": 0.5233,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "note": "quiet benefit item with planning icon and Planejamento integrado"
+    },
+    {
+      "id": "benefit-time",
+      "name": "Benefit time",
+      "kind": "control",
+      "box": {
+        "x": 0.61,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "note": "quiet benefit item with clock icon and Mais praticidade para sua rotina"
+    },
+    {
+      "id": "benefit-results",
+      "name": "Benefit results",
+      "kind": "control",
+      "box": {
+        "x": 0.6968,
+        "y": 0.796,
+        "w": 0.0855,
+        "h": 0.136
+      },
+      "note": "quiet benefit item with care icon and Resultados que acompanham você"
+    }
+  ]
+}

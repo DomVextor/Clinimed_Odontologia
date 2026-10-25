@@ -1,0 +1,39 @@
+{
+  "title": "Escolha a composição do Pavilhão Clinimed",
+  "question": "As três opções usam o mesmo mundo visual aprovado. Qual delas deve se tornar a referência espacial exata do site?",
+  "options": [
+    {
+      "id": "comp-01",
+      "label": "Arco de acolhimento",
+      "kicker": "A PRIMEIRA ESCOLHA",
+      "thesis": "Um arco de vidro atravessa a clínica e liga a mensagem, as provas e o agendamento.",
+      "palette": ["#F5F8F2", "#087444", "#064C31", "#B7EF32"],
+      "materials": ["vidro verde", "madeira clara", "luz natural"],
+      "viewport": "Texto amplo à esquerda, clínica real à direita e o arco como elo entre as duas metades.",
+      "risk": "É a leitura mais direta e também a mais próxima de um hero institucional tradicional.",
+      "comp": ".impeccable/mocks/decision/assigned-pavilion.png"
+    },
+    {
+      "id": "comp-02",
+      "label": "Portal central",
+      "kicker": "OPÇÃO 2",
+      "thesis": "Um grande portal de vidro envolve a promessa e conduz o olhar diretamente ao WhatsApp.",
+      "palette": ["#F5F8F2", "#087444", "#064C31", "#B7EF32"],
+      "materials": ["vidro curvo", "cal branca", "piso luminoso"],
+      "viewport": "Conteúdo centralizado dentro do portal, com o menu flutuante acima e a próxima seção surgindo por baixo.",
+      "risk": "O gesto é memorável, mas a marca precisa aparecer com contenção para não se repetir.",
+      "comp": ".impeccable/mocks/comp-option-02.png"
+    },
+    {
+      "id": "comp-03",
+      "label": "Cobertura de luz",
+      "kicker": "OPÇÃO 3",
+      "thesis": "Uma cobertura diagonal de vidro transforma luz, tratamentos e agendamento em um único percurso.",
+      "palette": ["#F5F8F2", "#087444", "#064C31", "#B7EF32"],
+      "materials": ["cobertura translúcida", "vidro fosco", "faixa luminosa"],
+      "viewport": "Headline sobre o horizonte da clínica, tratamentos embutidos na cobertura e o WhatsApp encerrando o fluxo.",
+      "risk": "É a composição mais ambiciosa e exige maior disciplina responsiva no celular.",
+      "comp": ".impeccable/mocks/comp-option-03.png"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "regions": [
+    {
+      "id": "hero-background",
+      "kind": "plate",
+      "pixelBox": {"x": 0, "y": 0, "w": 1672, "h": 662},
+      "bleed": true,
+      "note": "full-bleed sunlit dental clinic interior with pale wood reception, plants and one sweeping translucent deep-green glass arch with a lime light edge; no UI text"
+    },
+    {
+      "id": "nav-shell",
+      "kind": "chrome",
+      "container": true,
+      "pixelBox": {"x": 198, "y": 37, "w": 1263, "h": 108},
+      "note": "single floating translucent white glass navigation bubble"
+    },
+    {
+      "id": "nav-brand",
+      "kind": "image",
+      "parentId": "nav-shell",
+      "pixelBox": {"x": 261, "y": 46, "w": 195, "h": 83},
+      "note": "official Clinimed Odontologia logo with tooth symbol and lime underline"
+    },
+    {
+      "id": "nav-links",
+      "kind": "text",
+      "parentId": "nav-shell",
+      "pixelBox": {"x": 487, "y": 68, "w": 594, "h": 38},
+      "note": "desktop navigation labels from Início through Contatos in one horizontal row"
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "parentId": "nav-shell",
+      "pixelBox": {"x": 1173, "y": 53, "w": 254, "h": 70},
+      "note": "deep-green rounded WhatsApp control labeled Agende sua avaliação"
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "pixelBox": {"x": 180, "y": 213, "w": 594, "h": 133},
+      "note": "large two-line dark-green headline Seu sorriso, cuidado por inteiro"
+    },
+    {
+      "id": "hero-summary",
+      "kind": "text",
+      "pixelBox": {"x": 182, "y": 358, "w": 485, "h": 64},
+      "note": "two-line charcoal summary about a multidisciplinary clinic with more than 40 procedures"
+    },
+    {
+      "id": "hero-cta",
+      "kind": "control",
+      "pixelBox": {"x": 183, "y": 449, "w": 412, "h": 74},
+      "note": "large deep-green rounded WhatsApp control labeled Agendar pelo WhatsApp"
+    },
+    {
+      "id": "proof-since",
+      "kind": "text",
+      "pixelBox": {"x": 178, "y": 554, "w": 176, "h": 66},
+      "note": "calendar icon with Desde 2010 and short supporting copy"
+    },
+    {
+      "id": "proof-place",
+      "kind": "text",
+      "pixelBox": {"x": 377, "y": 554, "w": 180, "h": 66},
+      "note": "location icon with Votuporanga SP and short supporting copy"
+    },
+    {
+      "id": "proof-human",
+      "kind": "text",
+      "pixelBox": {"x": 579, "y": 554, "w": 212, "h": 66},
+      "note": "heart icon with Atendimento humanizado and short supporting copy"
+    },
+    {
+      "id": "section-shell",
+      "kind": "chrome",
+      "container": true,
+      "pixelBox": {"x": 0, "y": 646, "w": 1672, "h": 295},
+      "note": "wide off-white next-section surface with one smooth rising curved upper edge and a slim green-lime rule"
+    },
+    {
+      "id": "section-label",
+      "kind": "text",
+      "pixelBox": {"x": 153, "y": 724, "w": 270, "h": 18},
+      "note": "small tracked green label Nossos tratamentos"
+    },
+    {
+      "id": "section-title",
+      "kind": "text",
+      "pixelBox": {"x": 153, "y": 750, "w": 491, "h": 103},
+      "note": "large two-line dark-green heading Cuidado completo, no seu tempo"
+    },
+    {
+      "id": "section-copy",
+      "kind": "text",
+      "pixelBox": {"x": 155, "y": 850, "w": 516, "h": 52},
+      "note": "short charcoal paragraph about integrated planning and care"
+    },
+    {
+      "id": "benefit-team",
+      "kind": "control",
+      "pixelBox": {"x": 730, "y": 749, "w": 143, "h": 128},
+      "note": "quiet benefit item with people icon and Equipe especializada"
+    },
+    {
+      "id": "benefit-plan",
+      "kind": "control",
+      "pixelBox": {"x": 875, "y": 749, "w": 143, "h": 128},
+      "note": "quiet benefit item with planning icon and Planejamento integrado"
+    },
+    {
+      "id": "benefit-time",
+      "kind": "control",
+      "pixelBox": {"x": 1020, "y": 749, "w": 143, "h": 128},
+      "note": "quiet benefit item with clock icon and Mais praticidade para sua rotina"
+    },
+    {
+      "id": "benefit-results",
+      "kind": "control",
+      "pixelBox": {"x": 1165, "y": 749, "w": 143, "h": 128},
+      "note": "quiet benefit item with care icon and Resultados que acompanham você"
+    },
+    {
+      "id": "patient-image",
+      "kind": "image",
+      "pixelBox": {"x": 1308, "y": 611, "w": 364, "h": 330},
+      "bleed": true,
+      "note": "photographic patient reclining in a green dental chair, naturally lit and cropped by the right and lower edges"
+    }
+  ]
+}

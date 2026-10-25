@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T18:41:27.8053293Z",
+  "title": "Design System: Clinimed Odontologia",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel Luminoso",
+        "tonalRamp": [
+          "oklch(15% 0.006 100)",
+          "oklch(27% 0.006 100)",
+          "oklch(39% 0.006 100)",
+          "oklch(51% 0.006 100)",
+          "oklch(63% 0.006 100)",
+          "oklch(75% 0.006 100)",
+          "oklch(87% 0.006 100)",
+          "oklch(95% 0.006 100)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta Verde",
+        "tonalRamp": [
+          "oklch(15% 0.055 165)",
+          "oklch(27% 0.055 165)",
+          "oklch(39% 0.055 165)",
+          "oklch(51% 0.055 165)",
+          "oklch(63% 0.055 165)",
+          "oklch(75% 0.055 165)",
+          "oklch(87% 0.055 165)",
+          "oklch(95% 0.055 165)"
+        ]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Carvão Botânico",
+        "tonalRamp": [
+          "oklch(15% 0.018 185)",
+          "oklch(27% 0.018 185)",
+          "oklch(39% 0.018 185)",
+          "oklch(51% 0.018 185)",
+          "oklch(63% 0.018 185)",
+          "oklch(75% 0.018 185)",
+          "oklch(87% 0.018 185)",
+          "oklch(95% 0.018 185)"
+        ]
+      },
+      "clinimed-green": {
+        "role": "primary",
+        "displayName": "Verde Clinimed Profundo",
+        "tonalRamp": [
+          "oklch(15% 0.15 148)",
+          "oklch(27% 0.15 148)",
+          "oklch(39% 0.15 148)",
+          "oklch(51% 0.15 148)",
+          "oklch(63% 0.15 148)",
+          "oklch(75% 0.15 148)",
+          "oklch(87% 0.15 148)",
+          "oklch(95% 0.15 148)"
+        ]
+      },
+      "lime": {
+        "role": "secondary",
+        "displayName": "Lima de Sinalização",
+        "tonalRamp": [
+          "oklch(15% 0.18 126)",
+          "oklch(27% 0.18 126)",
+          "oklch(39% 0.18 126)",
+          "oklch(51% 0.18 126)",
+          "oklch(63% 0.18 126)",
+          "oklch(75% 0.18 126)",
+          "oklch(87% 0.18 126)",
+          "oklch(95% 0.18 126)"
+        ]
+      },
+      "forest-surface": {
+        "role": "primary",
+        "displayName": "Verde Floresta Estrutural",
+        "tonalRamp": [
+          "oklch(15% 0.085 162)",
+          "oklch(27% 0.085 162)",
+          "oklch(39% 0.085 162)",
+          "oklch(51% 0.085 162)",
+          "oklch(63% 0.085 162)",
+          "oklch(75% 0.085 162)",
+          "oklch(87% 0.085 162)",
+          "oklch(95% 0.085 162)"
+        ]
+      },
+      "sage-surface": {
+        "role": "neutral",
+        "displayName": "Sálvia de Superfície",
+        "tonalRamp": [
+          "oklch(15% 0.025 140)",
+          "oklch(27% 0.025 140)",
+          "oklch(39% 0.025 140)",
+          "oklch(51% 0.025 140)",
+          "oklch(63% 0.025 140)",
+          "oklch(75% 0.025 140)",
+          "oklch(87% 0.025 140)",
+          "oklch(95% 0.025 140)"
+        ]
+      },
+      "warm-cream": {
+        "role": "neutral",
+        "displayName": "Creme Acolhedor",
+        "tonalRamp": [
+          "oklch(15% 0.035 85)",
+          "oklch(27% 0.035 85)",
+          "oklch(39% 0.035 85)",
+          "oklch(51% 0.035 85)",
+          "oklch(63% 0.035 85)",
+          "oklch(75% 0.035 85)",
+          "oklch(87% 0.035 85)",
+          "oklch(95% 0.035 85)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divisor Mineral",
+        "tonalRamp": [
+          "oklch(15% 0.02 150)",
+          "oklch(27% 0.02 150)",
+          "oklch(39% 0.02 150)",
+          "oklch(51% 0.02 150)",
+          "oklch(63% 0.02 150)",
+          "oklch(75% 0.02 150)",
+          "oklch(87% 0.02 150)",
+          "oklch(95% 0.02 150)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Arredondado",
+        "purpose": "Títulos de seção e mensagens de maior impacto."
+      },
+      "title": {
+        "displayName": "Título de Conteúdo",
+        "purpose": "Títulos internos de cards e conteúdo em destaque."
+      },
+      "body": {
+        "displayName": "Corpo Humano",
+        "purpose": "Explicações e leitura contínua."
+      },
+      "label": {
+        "displayName": "Rótulo Operacional",
+        "purpose": "Numeração, metadados e rótulos breves."
+      }
+    },
+    "shadows": [
+      {
+        "name": "glass-floating",
+        "value": "0 14px 38px rgba(33, 61, 44, .14), inset 0 1px 0 #fff",
+        "purpose": "Navegação e superfícies translúcidas."
+      },
+      {
+        "name": "action-green",
+        "value": "0 10px 25px rgba(5, 101, 45, .22), inset 0 1px 0 rgba(255, 255, 255, .25)",
+        "purpose": "Botões primários em repouso."
+      },
+      {
+        "name": "panel-deep",
+        "value": "0 34px 90px rgba(18, 54, 38, .16)",
+        "purpose": "Painéis de conteúdo com maior presença."
+      },
+      {
+        "name": "floating-action",
+        "value": "0 14px 38px rgba(2, 57, 27, .3)",
+        "purpose": "Ação circular fixa acima do conteúdo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Easing padrão para entradas e respostas de interface."
+      },
+      {
+        "name": "press",
+        "value": "140ms cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Compressão curta de ações no estado active."
+      },
+      {
+        "name": "content-update",
+        "value": "160ms cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Troca de conteúdo selecionável."
+      },
+      {
+        "name": "menu-open",
+        "value": "300ms cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Entrada da superfície de navegação móvel."
+      },
+      {
+        "name": "reveal",
+        "value": "600ms cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Revelação única de blocos durante a rolagem."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "200ms ease; transform: none",
+        "purpose": "Substitui deslocamentos por fades breves quando o usuário reduz movimento."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "tablet-min",
+        "value": "768px"
+      },
+      {
+        "name": "compact-layout-max",
+        "value": "1100px"
+      },
+      {
+        "name": "condensed-navigation-max",
+        "value": "1279px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal em verde profundo, com ícone, rótulo e seta opcional.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg class=\"ds-btn-primary__icon\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7A8.5 8.5 0 1 1 20.5 11.7Z\"/><path d=\"M8.3 7.8c.2-.5.4-.5.8-.5h.5c.2 0 .3.1.4.4l.8 2c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.5 1 1.3 1.8 2.3 2.3.2.1.4.2.6 0l.8-1c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5 0 .3-.2 1.5-1.1 2-.5.4-1.2.6-2 .4-1.4-.3-3.1-1-4.8-2.5-1.4-1.3-2.4-2.9-2.7-4.2-.3-1 0-1.7.2-2.2Z\"/></svg><span>Agendar pelo WhatsApp</span><span class=\"ds-btn-primary__arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-btn-primary { display: inline-flex; min-height: 58px; padding: 0 26px; gap: 14px; align-items: center; justify-content: center; border: 1px solid rgba(73, 233, 121, .7); border-radius: 999px; color: #fff; background: linear-gradient(105deg, #006b31 4%, #047d36 58%, #087c39 100%); box-shadow: 0 10px 25px rgba(5, 101, 45, .22), inset 0 1px 0 rgba(255, 255, 255, .25); font-family: \"Albert Sans\", Arial, sans-serif; font-size: 15px; font-weight: 750; line-height: 1; text-decoration: none; transition: transform 140ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), box-shadow 180ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); } .ds-btn-primary__icon { width: 29px; height: 29px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; } .ds-btn-primary__arrow { font-size: 22px; font-weight: 400; } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 32px rgba(5, 101, 45, .28), inset 0 1px 0 rgba(255, 255, 255, .25); } .ds-btn-primary:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #075f32; } .ds-btn-primary:active { transform: scale(.97); } @media (prefers-reduced-motion: reduce) { .ds-btn-primary { transition-duration: 0ms; } }"
+    },
+    {
+      "name": "Secondary Outline Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação secundária contornada para uso sobre superfícies verdes.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\"><span>Agende sua avaliação</span><span class=\"ds-btn-secondary__arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-btn-secondary { display: inline-flex; min-height: 58px; padding: 0 26px; gap: 25px; align-items: center; border: 1px solid rgba(255, 255, 255, .32); border-radius: 999px; color: #f8fbf7; background: transparent; font-family: \"Albert Sans\", Arial, sans-serif; font-size: 15px; font-weight: 730; text-decoration: none; transition: transform 140ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), background-color 180ms ease, color 180ms ease; } .ds-btn-secondary__arrow { font-size: 22px; } .ds-btn-secondary:hover { color: #083c28; background: #c2ef58; } .ds-btn-secondary:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #075f32; } .ds-btn-secondary:active { transform: scale(.97); } @media (prefers-reduced-motion: reduce) { .ds-btn-secondary { transition-duration: 0ms; } }"
+    },
+    {
+      "name": "Lime Accent Button",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Ação conclusiva rara em lima, reservada para superfícies profundas.",
+      "html": "<a class=\"ds-btn-accent\" href=\"#\"><span>Agendar pelo WhatsApp</span><span class=\"ds-btn-accent__arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-btn-accent { display: inline-flex; min-height: 58px; padding: 0 26px; gap: 25px; align-items: center; border: 1px solid #c2ef58; border-radius: 999px; color: #083c28; background: #c2ef58; font-family: \"Albert Sans\", Arial, sans-serif; font-size: 15px; font-weight: 730; text-decoration: none; transition: transform 140ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), box-shadow 180ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); } .ds-btn-accent__arrow { font-size: 22px; } .ds-btn-accent:hover { transform: translateY(-2px); box-shadow: 0 15px 32px rgba(5, 101, 45, .28), inset 0 1px 0 rgba(255, 255, 255, .25); } .ds-btn-accent:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #075f32; } .ds-btn-accent:active { transform: scale(.97); } @media (prefers-reduced-motion: reduce) { .ds-btn-accent { transition-duration: 0ms; } }"
+    },
+    {
+      "name": "Glass Navigation",
+      "kind": "nav",
+      "refersTo": "glass-navigation",
+      "description": "Cápsula de vidro que reúne marca, links e ação principal.",
+      "html": "<nav class=\"ds-glass-nav\" aria-label=\"Navegação de exemplo\"><strong class=\"ds-glass-nav__brand\">Clinimed</strong><div class=\"ds-glass-nav__links\"><a class=\"ds-glass-nav__link ds-is-active\" href=\"#\">Início</a><a class=\"ds-glass-nav__link\" href=\"#\">Tratamentos</a><a class=\"ds-glass-nav__link\" href=\"#\">Contatos</a></div><a class=\"ds-glass-nav__action\" href=\"#\">Agende sua avaliação</a></nav>",
+      "css": ".ds-glass-nav { display: flex; min-height: 76px; padding: 0 14px 0 24px; gap: 28px; align-items: center; border: 1px solid rgba(255, 255, 255, .9); border-radius: 999px; color: #102d22; background: linear-gradient(105deg, rgba(255, 255, 255, .86), rgba(250, 249, 242, .72)); box-shadow: 0 14px 38px rgba(33, 61, 44, .14), inset 0 1px 0 #fff; backdrop-filter: blur(18px) saturate(1.15); font-family: \"Albert Sans\", Arial, sans-serif; } .ds-glass-nav__brand { margin-right: auto; color: #08752f; font-family: \"Baloo Bhaina 2\", sans-serif; font-size: 24px; line-height: 1; } .ds-glass-nav__links { display: flex; gap: 22px; align-items: center; } .ds-glass-nav__link { position: relative; padding: 12px 0; color: inherit; font-size: 14px; font-weight: 650; text-decoration: none; } .ds-glass-nav__link::after { position: absolute; right: 0; bottom: 3px; left: 0; height: 3px; border-radius: 99px; background: #16a345; content: \"\"; transform: scaleX(0); } .ds-glass-nav__link.ds-is-active::after { transform: scaleX(.62); } .ds-glass-nav__action { display: inline-flex; min-height: 48px; padding: 0 20px; align-items: center; border-radius: 999px; color: #fff; background: #087c39; font-size: 14px; font-weight: 720; text-decoration: none; } .ds-glass-nav__link:hover { color: #08752f; } .ds-glass-nav__link:focus-visible, .ds-glass-nav__action:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #075f32; } .ds-glass-nav__action:active { transform: scale(.97); }"
+    },
+    {
+      "name": "Selectable Treatment Row",
+      "kind": "custom",
+      "refersTo": "treatment-row",
+      "description": "Linha selecionável com número, rótulo e seta de confirmação.",
+      "html": "<button class=\"ds-treatment-row\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-treatment-row__number\">01</span><span class=\"ds-treatment-row__label\">Ortodontia</span><span class=\"ds-treatment-row__arrow\" aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-treatment-row { display: grid; grid-template-columns: 52px 1fr 34px; width: 100%; min-height: 73px; padding: 0 4px; align-items: center; border: 0; border-top: 1px solid #ccd5cf; border-bottom: 1px solid #ccd5cf; color: #60706b; background: transparent; font-family: \"Albert Sans\", Arial, sans-serif; font-size: 20px; text-align: left; cursor: pointer; } .ds-treatment-row__number { color: #526f61; font-size: 12px; font-weight: 750; letter-spacing: .12em; } .ds-treatment-row__label { font-weight: 620; } .ds-treatment-row__arrow { color: #148b47; font-size: 22px; text-align: right; transition: transform 250ms ease; } .ds-treatment-row:hover, .ds-treatment-row:focus-visible, .ds-treatment-row[aria-pressed=\"true\"] { color: #082d23; } .ds-treatment-row[aria-pressed=\"true\"] .ds-treatment-row__arrow { transform: rotate(45deg); } .ds-treatment-row:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #075f32; } @media (prefers-reduced-motion: reduce) { .ds-treatment-row__arrow { transition-duration: 0ms; } }"
+    },
+    {
+      "name": "Benefit Card",
+      "kind": "card",
+      "refersTo": "benefit-card",
+      "description": "Microcard translúcido com ícone circular e benefício curto.",
+      "html": "<div class=\"ds-benefit-card\"><span class=\"ds-benefit-card__icon\"><svg class=\"ds-benefit-card__svg\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><circle cx=\"17\" cy=\"9\" r=\"2.5\"/><path d=\"M3 19v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M15 14h2a4 4 0 0 1 4 4v1\"/></svg></span><span class=\"ds-benefit-card__label\">Equipe<br>especializada</span></div>",
+      "css": ".ds-benefit-card { display: flex; width: 150px; min-height: 128px; padding: 18px; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, .95); border-radius: 25px; color: #4a5556; background: rgba(250, 250, 248, .72); box-shadow: 0 9px 28px rgba(43, 71, 57, .05), inset 0 1px 0 #fff; font-family: \"Albert Sans\", Arial, sans-serif; font-size: 16px; font-weight: 480; line-height: 1.14; text-align: center; } .ds-benefit-card__icon { display: grid; width: 47px; height: 47px; margin-bottom: 10px; place-items: center; border-radius: 50%; color: #0b5a2e; background: #e7f7da; } .ds-benefit-card__svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; } .ds-benefit-card__label { display: block; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Pavilhão Clinimed",
+    "overview": "O sistema visual transforma cuidado odontológico em um pavilhão luminoso, acolhedor e contemporâneo. O off-white cria ar e clareza; o verde Clinimed profundo estrutura confiança; vidro translúcido, madeira clara e luz natural acrescentam presença humana sem perder precisão clínica.\n\nA linguagem combina tipografia arredondada, superfícies amplas e curvas contínuas. O verde-lima aparece raramente como sinal de ação ou ênfase, enquanto profundidade, foco e movimento permanecem discretos, acessíveis e funcionais.",
+    "keyCharacteristics": [
+      "Base off-white luminosa com âncoras em verde profundo.",
+      "Verde-lima raro e intencional.",
+      "Vidro translúcido, madeira clara e luz natural.",
+      "Tipografia sans robusta, arredondada e humana.",
+      "Curvas contínuas, espaço generoso e profundidade ambiental.",
+      "Foco visível em anel duplo e movimento compatível com reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Rare Lime Rule",
+        "body": "Use o verde-lima como pontuação, nunca como preenchimento dominante; ele deve indicar ação, conquista ou informação excepcional.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rounded Voice Rule",
+        "body": "Use Baloo Bhaina 2 para calor e presença em títulos; mantenha Albert Sans em toda interação e leitura prolongada.",
+        "section": "typography"
+      },
+      {
+        "name": "The Breathing Room Rule",
+        "body": "Preserve margens generosas ao redor de títulos, imagens e ações; densidade clínica não deve parecer pressa visual.",
+        "section": "layout"
+      },
+      {
+        "name": "The Ambient Depth Rule",
+        "body": "Profundidade deve parecer luz natural atravessando material, não uma pilha de cartões flutuantes.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Continuous Curve Rule",
+        "body": "Curvas devem conduzir o olhar e conectar superfícies; evite misturar cantos duros com raios decorativos sem função.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use o off-white como espaço respirável e o verde profundo como âncora de confiança.",
+      "Do reserve o verde-lima para ações e informações realmente excepcionais.",
+      "Do combine vidro translúcido com contorno claro, blur e sombra ambiental discreta.",
+      "Do preserve o foco de anel duplo em todos os controles e links interativos.",
+      "Do reduza deslocamentos e transições quando `prefers-reduced-motion` estiver ativo."
+    ],
+    "donts": [
+      "Don't transforme o verde-lima em fundo dominante ou ornamento repetitivo.",
+      "Don't comprima conteúdo em grades densas de pequenos cards quando uma superfície ampla resolver melhor.",
+      "Don't use sombras pretas duras, cantos rígidos ou contraste frio que elimine a sensação de luz natural.",
+      "Don't aplique Baloo Bhaina 2 a parágrafos longos, navegação ou dados operacionais.",
+      "Don't remova o foco visível nem dependa apenas de cor para comunicar estado."
+    ]
+  }
+}
