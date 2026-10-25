@@ -104,6 +104,15 @@ button, a, [role="button"] {
   object-fit: cover;
 }
 
+.hero-slide {
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease-in-out;
+}
+
+.hero-slide.is-active { opacity: 1; }
+
 .r-nav-shell {
   position: fixed;
   left: var(--r-nav-shell-x); top: 24px;
@@ -749,6 +758,7 @@ button, a, [role="button"] {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .hero-slide { transition: none; }
   .r-nav-shell, .r-nav-brand, .r-nav-links, .r-nav-cta { animation: nav-fade 200ms ease both; }
   .reveal-on-scroll { transform: none; transition: opacity 200ms ease; }
   .treatment-copy.is-updating { transform: none; }

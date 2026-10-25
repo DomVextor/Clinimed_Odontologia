@@ -62,6 +62,33 @@ const treatmentDescription = document.querySelector("#treatment-description");
 const treatmentNumber = document.querySelector(".treatment-current-number");
 const treatmentCopy = document.querySelector(".treatment-copy");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Fundo da seção inicial: recepção e consultórios, um por segundo.
+const heroSlides = [...document.querySelectorAll(".hero-slide")];
+let activeHeroSlide = 0;
+let heroSlideshowTimer;
+
+const advanceHeroSlide = () => {
+  const nextIndex = (activeHeroSlide + 1) % heroSlides.length;
+  const nextSlide = heroSlides[nextIndex];
+
+  // Aguarda a próxima foto carregar para nunca exibir um fundo vazio.
+  if (!nextSlide.complete || !nextSlide.naturalWidth) return;
+
+  heroSlides[activeHeroSlide].classList.remove("is-active");
+  nextSlide.classList.add("is-active");
+  activeHeroSlide = nextIndex;
+};
+
+const syncHeroSlideshow = () => {
+  window.clearInterval(heroSlideshowTimer);
+  if (heroSlides.length > 1 && !reduceMotion && !document.hidden) {
+    heroSlideshowTimer = window.setInterval(advanceHeroSlide, 1000);
+  }
+};
+
+document.addEventListener("visibilitychange", syncHeroSlideshow);
+syncHeroSlideshow();
 let treatmentTimer;
 
 treatmentRows.forEach((row) => {
