@@ -104,14 +104,25 @@ button, a, [role="button"] {
   object-fit: cover;
 }
 
+/* Carrossel controlado por CSS: funciona mesmo sem JavaScript. */
 .hero-slide {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 350ms ease-in-out;
+  animation: hero-photo-cycle 4s linear infinite;
 }
 
-.hero-slide.is-active { opacity: 1; }
+/* A primeira imagem começa visível; as demais entram a cada segundo. */
+.hero-slide:nth-of-type(1) { animation-delay: 0s; }
+.hero-slide:nth-of-type(2) { animation-delay: -3s; }
+.hero-slide:nth-of-type(3) { animation-delay: -2s; }
+.hero-slide:nth-of-type(4) { animation-delay: -1s; }
+
+@keyframes hero-photo-cycle {
+  0%, 18.75% { opacity: 1; }
+  25%, 93.75% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .r-nav-shell {
   position: fixed;
@@ -758,7 +769,7 @@ button, a, [role="button"] {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-slide { transition: none; }
+  .hero-slide { animation-timing-function: steps(1, end); }
   .r-nav-shell, .r-nav-brand, .r-nav-links, .r-nav-cta { animation: nav-fade 200ms ease both; }
   .reveal-on-scroll { transform: none; transition: opacity 200ms ease; }
   .treatment-copy.is-updating { transform: none; }
