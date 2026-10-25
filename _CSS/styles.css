@@ -104,23 +104,23 @@ button, a, [role="button"] {
   object-fit: cover;
 }
 
-/* Carrossel controlado por CSS: funciona mesmo sem JavaScript. */
+/* 4 segundos com a foto visível + crossfade suave de 4 segundos. */
 .hero-slide {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
-  animation: hero-photo-cycle 4s linear infinite;
+  animation: hero-photo-cycle 32s ease-in-out infinite;
 }
 
-/* A primeira imagem começa visível; as demais entram a cada segundo. */
+/* A ordem é recepção, consultórios 1, 2 e 3. */
 .hero-slide:nth-of-type(1) { animation-delay: 0s; }
-.hero-slide:nth-of-type(2) { animation-delay: -3s; }
-.hero-slide:nth-of-type(3) { animation-delay: -2s; }
-.hero-slide:nth-of-type(4) { animation-delay: -1s; }
+.hero-slide:nth-of-type(2) { animation-delay: -24s; }
+.hero-slide:nth-of-type(3) { animation-delay: -16s; }
+.hero-slide:nth-of-type(4) { animation-delay: -8s; }
 
 @keyframes hero-photo-cycle {
-  0%, 18.75% { opacity: 1; }
-  25%, 93.75% { opacity: 0; }
+  0%, 12.5% { opacity: 1; }
+  25%, 87.5% { opacity: 0; }
   100% { opacity: 1; }
 }
 
