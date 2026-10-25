@@ -104,12 +104,13 @@ button, a, [role="button"] {
   object-fit: cover;
 }
 
-/* Cada foto permanece 4s visível e faz crossfade em 4s; ciclo de 24s. */
+/* Fade cruzado: 4s de exibição e 4s de transição progressiva entre imagens. */
 .hero-slide {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
-  animation: hero-photo-cycle 24s ease-in-out infinite;
+  will-change: opacity;
+  animation: hero-photo-cycle 24s cubic-bezier(.42, 0, .58, 1) infinite;
 }
 
 /* Recepção, consultório 1 e consultório 3. */
@@ -760,7 +761,6 @@ button, a, [role="button"] {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-slide { animation-timing-function: steps(1, end); }
   .r-nav-shell, .r-nav-brand, .r-nav-links, .r-nav-cta { animation: nav-fade 200ms ease both; }
   .reveal-on-scroll { transform: none; transition: opacity 200ms ease; }
   .treatment-copy.is-updating { transform: none; }
