@@ -129,11 +129,16 @@ button, a, [role="button"] {
   left: var(--r-nav-shell-x); top: 24px;
   width: var(--r-nav-shell-w); height: 80px;
   z-index: 50;
-  border: 1px solid rgba(255, 255, 255, .9);
+  border: 1px solid rgba(255, 255, 255, .72);
   border-radius: 999px;
-  background: linear-gradient(105deg, rgba(255, 255, 255, .86), rgba(250, 249, 242, .72));
-  box-shadow: 0 14px 38px rgba(33, 61, 44, .14), inset 0 1px 0 #fff;
-  backdrop-filter: blur(18px) saturate(1.15);
+  /* Vidro suave: branco predominante, toque verde e fotos perceptíveis ao fundo. */
+  background: linear-gradient(108deg,
+    rgba(255, 255, 255, .78) 0%,
+    rgba(248, 254, 249, .66) 53%,
+    rgba(218, 243, 225, .45) 100%);
+  box-shadow: 0 10px 30px rgba(33, 61, 44, .10), inset 0 1px 0 rgba(255, 255, 255, .60);
+  -webkit-backdrop-filter: blur(11px) saturate(1.08);
+  backdrop-filter: blur(11px) saturate(1.08);
 }
 
 .r-nav-brand {
