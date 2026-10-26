@@ -180,13 +180,6 @@ if ("IntersectionObserver" in window) {
   observedSections.forEach((section) => navObserver.observe(section));
 }
 
-const floatingWhatsApp = document.querySelector(".floating-whatsapp");
-const updateFloatingWhatsApp = () => {
-  floatingWhatsApp?.classList.toggle("is-visible", window.scrollY > window.innerHeight * .55);
-};
-window.addEventListener("scroll", updateFloatingWhatsApp, { passive: true });
-updateFloatingWhatsApp();
-
 const mobileMenu = document.querySelector("#mobile-menu");
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenuClose = document.querySelector(".mobile-menu-close");

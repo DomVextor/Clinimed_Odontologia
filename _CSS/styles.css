@@ -210,6 +210,7 @@ button, a, [role="button"] {
   stroke-width: 1.8;
 }
 .comp-frame .button svg, .button-hero .arrow { transition: transform 340ms var(--ease-out); }
+.button .whatsapp-icon { fill: currentColor; stroke: none; }
 
 .r-nav-cta {
   position: fixed;
@@ -701,18 +702,14 @@ button, a, [role="button"] {
   width: 58px;
   height: 58px;
   place-items: center;
-  border: 1px solid rgba(255,255,255,.65);
+  border: 2px solid rgba(255,255,255,.94);
   border-radius: 50%;
   color: #fff;
-  background: #07853a;
-  box-shadow: 0 14px 38px rgba(2, 57, 27, .3);
-  opacity: 0;
-  transform: translateY(18px) scale(.96);
-  pointer-events: none;
-  transition: opacity 220ms var(--ease-out), transform 220ms var(--ease-out);
+  background: #25d366;
+  box-shadow: 0 14px 38px rgba(9, 103, 55, .26);
+  transition: transform 260ms var(--ease-out), box-shadow 260ms var(--ease-out), background-color 260ms ease;
 }
-.floating-whatsapp.is-visible { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
-.floating-whatsapp svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.floating-whatsapp .whatsapp-icon { width: 34px; height: 34px; fill: currentColor; stroke: none; }
 
 .mobile-menu {
   position: fixed;
