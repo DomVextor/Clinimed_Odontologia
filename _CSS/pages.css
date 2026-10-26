@@ -22,3 +22,19 @@
 @media(max-width:1180px){.p-desktop-nav,.p-header-cta{display:none}.p-header-inner{min-height:83px;justify-content:space-between}.p-logo img{height:77px}.p-mobile-menu{display:block;position:relative}.p-mobile-menu summary{display:flex;gap:15px;align-items:center;padding:11px 17px;border:1px solid #d4e6d5;border-radius:100px;color:#0b6339;cursor:pointer;font-weight:750;list-style:none}.p-mobile-menu summary::-webkit-details-marker{display:none}.p-mobile-menu summary span{font-size:20px}.p-mobile-menu nav{position:absolute;right:0;top:calc(100% + 11px);z-index:70;display:flex;min-width:min(330px,calc(100vw - 52px));flex-direction:column;padding:15px;border:1px solid #d8e7d6;border-radius:24px;background:#fff;box-shadow:0 20px 55px rgba(4,49,25,.18)}.p-mobile-menu nav a{padding:12px 15px;border-radius:10px;font-size:14px}.p-mobile-menu nav a[aria-current]{color:#0b7b40;background:#eaf6e8}.p-mobile-menu nav .p-menu-cta{margin-top:7px;background:#0d793f;color:#fff;text-align:center}.p-hero-grid{min-height:540px;gap:4%}.p-hero h1{font-size:clamp(49px,5.2vw,69px)}.p-hero-visual>img{height:400px}.p-hero-visual{min-height:400px}.p-treatment-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.p-container{width:calc(100% - 40px)}.p-logo{flex-basis:135px}.p-logo img{width:135px;height:67px}.p-header-inner{min-height:75px}.p-hero-grid{grid-template-columns:1fr;min-height:auto;gap:48px;padding-block:27px 58px}.p-breadcrumb{margin-bottom:43px}.p-hero h1{font-size:clamp(43px,10.7vw,65px)}.p-hero-description{font-size:16px;line-height:1.65}.p-hero-actions{gap:22px}.p-hero-visual,.p-hero-visual>img{min-height:0;height:320px}.p-hero-visual::before{inset:16px -8px -10px 16px}.p-hero-badge{left:12px;bottom:15px;padding:13px 16px}.p-hero-badge strong{font-size:13px}.p-hero-badge span{font-size:8px}.p-section{padding:75px 0}.p-section h2{font-size:clamp(38px,9vw,53px)}.p-section-lead{margin-bottom:34px}.p-split,.p-map-layout{grid-template-columns:1fr;gap:40px}.p-image-stack{padding-left:0}.p-stack-large{height:330px}.p-stack-small{height:165px}.p-photo-frame img{height:300px}.p-values,.p-treatment-grid,.p-specialty-grid,.p-contact-grid{grid-template-columns:1fr}.p-values article{min-height:195px}.p-treatment-card{min-height:330px}.p-gallery{grid-template-columns:1fr 1fr}.p-gallery figure:first-child{grid-column:1/-1}.p-gallery img{height:205px}.p-gallery figure:first-child img{height:250px}.p-stats{gap:20px}.p-callout{padding:70px 0}.p-callout-inner{align-items:flex-start;flex-direction:column;gap:26px}.p-callout h2{font-size:43px}.p-footer-grid{grid-template-columns:1fr;gap:25px}.p-footer-grid nav{max-width:340px}.p-footer-bottom{flex-direction:column;margin-top:35px}.p-article{grid-template-columns:1fr;gap:4px;padding:32px 0}.p-article-number{font-size:43px}.p-article-content h3{font-size:34px}.p-map,.p-map iframe{min-height:340px}.p-whatsapp{right:17px;bottom:calc(17px + env(safe-area-inset-bottom,0px));width:56px;height:56px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
+
+/* O cabeçalho das páginas internas reutiliza o menu da página inicial.
+   O espaçamento mantém o conteúdo livre sob os controles fixos. */
+.p-body #conteudo { padding-top: 120px; }
+.p-body .mobile-menu nav a[aria-current="page"] {
+  padding-inline: 12px;
+  border-radius: 12px;
+  color: #0b783d;
+  background: rgba(214, 241, 210, .55);
+}
+@media (max-width: 1279px) {
+  .p-body #conteudo { padding-top: 112px; }
+}
+@media (max-width: 767px) {
+  .p-body #conteudo { padding-top: 101px; }
+}
