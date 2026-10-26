@@ -104,24 +104,43 @@ button, a, [role="button"] {
   object-fit: cover;
 }
 
-/* Fade cruzado: 4s de exibição e 4s de transição progressiva entre imagens. */
+/* Carrossel em ordem fixa: recep1 -> consul1 -> consul3 -> recep1.
+   Cada foto fica visível por 4s, seguida de 4s de fade cruzado.
+   O ciclo completo dura 24s (3 fotos x 8s). */
 .hero-slide {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
   will-change: opacity;
-  animation: hero-photo-cycle 24s cubic-bezier(.42, 0, .58, 1) infinite;
+  animation-duration: 24s;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
-/* Recepção, consultório 1 e consultório 3. */
-.hero-slide:nth-of-type(1) { animation-delay: 0s; }
-.hero-slide:nth-of-type(2) { animation-delay: -16s; }
-.hero-slide:nth-of-type(3) { animation-delay: -8s; }
+.hero-slide--recep1 { animation-name: hero-recep1; }
+.hero-slide--consul1 { animation-name: hero-consul1; }
+.hero-slide--consul3 { animation-name: hero-consul3; }
 
-@keyframes hero-photo-cycle {
+/* 0-4s recepção, 4-8s fade para consultório 1. */
+@keyframes hero-recep1 {
   0%, 16.6667% { opacity: 1; }
   33.3333%, 83.3333% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* 8-12s consultório 1, 12-16s fade para consultório 3. */
+@keyframes hero-consul1 {
+  0%, 16.6667% { opacity: 0; }
+  33.3333%, 50% { opacity: 1; }
+  66.6667%, 100% { opacity: 0; }
+}
+
+/* 16-20s consultório 3, 20-24s fade para recepção. */
+@keyframes hero-consul3 {
+  0%, 50% { opacity: 0; }
+  66.6667%, 83.3333% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .r-nav-shell {
