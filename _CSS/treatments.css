@@ -1,0 +1,132 @@
+/* Clinimed · hub editorial de tratamentos */
+.tx-main { --tx-ink:#082f23;--tx-green:#08752f;--tx-muted:#607467;--tx-line:#dce5da; color:var(--tx-ink); }
+.tx-main a { text-decoration:none; }
+.tx-shell { width:min(1320px,calc(100% - 76px)); margin-inline:auto; }
+.tx-eyebrow { display:inline-flex; align-items:center; gap:10px; margin:0; color:#237548; font:800 11px/1.3 'Albert Sans',sans-serif; letter-spacing:.155em; text-transform:uppercase; }
+.tx-eyebrow::before { content:""; width:22px; height:2px; border-radius:4px; background:#65b56c; }
+.tx-section-title { margin:14px 0 0; max-width:830px; font:700 clamp(41px,4.2vw,67px)/.99 'Baloo Bhaina 2',sans-serif; letter-spacing:-.038em; }
+.tx-section-description { max-width:655px; margin:21px 0 0; color:var(--tx-muted); font-size:16px; line-height:1.75; }
+.tx-button { display:inline-flex; align-items:center; justify-content:center; gap:22px; min-height:56px; padding:15px 25px; border:1px solid transparent; border-radius:999px; background:#08752f; color:#fff!important; font-weight:750; font-size:14px; line-height:1.25; box-shadow:0 12px 25px rgba(7,85,43,.18); transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s cubic-bezier(.22,1,.36,1),background-color .25s; }
+.tx-button:hover { transform:translateY(-4px); box-shadow:0 20px 34px rgba(7,85,43,.22); background:#075e2b; }
+.tx-button svg,.tx-text-link svg { width:17px; height:17px; transition:transform .3s; }
+.tx-button:hover svg,.tx-text-link:hover svg { transform:translate(3px,-3px); }
+.tx-text-link { display:inline-flex; align-items:center; gap:10px; color:#08752f!important; font-size:14px; font-weight:780; border-bottom:1px solid rgba(8,117,47,.3); padding-bottom:5px; }
+.tx-hero { position:relative; overflow:hidden; background:radial-gradient(circle at 82% 13%,rgba(199,229,195,.75),transparent 43%),linear-gradient(125deg,#f9faf6,#edf4ea); }
+.tx-hero::after { content:""; position:absolute; z-index:0; pointer-events:none; width:620px; height:620px; border:1px solid rgba(10,103,51,.1); border-radius:50%; right:-380px; top:-350px; }
+.tx-hero-layout { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:7%; align-items:center; min-height:610px; padding:55px 0 84px; position:relative; z-index:1; }
+.tx-breadcrumb { margin:0 0 48px; color:#667d6c; font-size:13px; }
+.tx-breadcrumb a:hover { color:var(--tx-green); text-decoration:underline; }
+.tx-breadcrumb span { padding:0 9px; color:#abbbae; }
+.tx-hero h1 { max-width:710px; margin:24px 0 22px; font:700 clamp(54px,5.3vw,85px)/.94 'Baloo Bhaina 2',sans-serif; letter-spacing:-.047em; }
+.tx-hero h1 em { color:#0b7c3e; font-style:normal; }
+.tx-hero-copy>p:not(.tx-breadcrumb):not(.tx-eyebrow) { max-width:520px; margin:0; color:#536e5d; font-size:17px; line-height:1.8; }
+.tx-hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:23px; margin-top:33px; }
+.tx-hero-visual { position:relative; padding:20px 17px 25px 0; }
+.tx-hero-photo { display:block; width:100%; height:460px; object-fit:cover; border-radius:38% 15% 34% 15%; box-shadow:0 34px 70px rgba(9,73,38,.15); }
+.tx-hero-visual::before { content:""; position:absolute; z-index:-1; inset:38px 0 4px 26px; border-radius:36% 14% 36% 18%; background:linear-gradient(135deg,#d0e9c4,#80bd8b); transform:rotate(3deg); }
+.tx-hero-note { position:absolute; left:-28px; bottom:57px; padding:17px 22px; border:1px solid rgba(255,255,255,.8); border-radius:18px; background:rgba(252,254,249,.95); box-shadow:0 19px 39px rgba(18,64,36,.13); }
+.tx-hero-note small { display:block; color:#447c57; font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.tx-hero-note strong { display:block; margin-top:6px; font:700 22px/.95 'Baloo Bhaina 2',sans-serif; }
+.tx-catalog { padding:104px 0 113px; background:#f7f8f4; }
+.tx-catalog-header { display:flex; align-items:end; justify-content:space-between; gap:32px; margin-bottom:35px; }
+.tx-catalog-header .tx-section-description { max-width:620px; }
+.tx-count-badge { display:flex; align-items:baseline; flex-shrink:0; gap:9px; padding-bottom:4px; color:#678172; font-size:13px; }
+.tx-count-badge strong { font:700 48px/.9 'Baloo Bhaina 2',sans-serif; color:#0b7c42; }
+.tx-filters { display:flex; flex-wrap:wrap; gap:9px; margin-bottom:17px; }
+.tx-filter { min-height:45px; padding:11px 18px; border:1px solid #d3e1d2; border-radius:100px; background:rgba(255,255,255,.83); color:#435e4c; font:700 13px/1.2 'Albert Sans',sans-serif; cursor:pointer; transition:background-color .25s,color .25s,border-color .25s,transform .25s; }
+.tx-filter:hover { border-color:#75ae81; transform:translateY(-2px); }
+.tx-filter[aria-pressed="true"] { border-color:#0d773c; background:#0d773c; color:#fff; box-shadow:0 9px 22px rgba(8,94,42,.13); }
+.tx-filter-status { min-height:24px; margin:0 0 22px; color:#687b6d; font-size:12px; }
+.tx-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.tx-card { display:flex; flex-direction:column; min-width:0; overflow:hidden; background:#fff; border:1px solid #e1e8de; border-radius:28px; box-shadow:0 9px 28px rgba(17,74,40,.025); transition:transform .38s cubic-bezier(.22,1,.36,1),box-shadow .38s cubic-bezier(.22,1,.36,1),border-color .25s; }
+.tx-card:hover { transform:translateY(-7px); border-color:#b9d7b9; box-shadow:0 25px 50px rgba(17,74,40,.10); }
+.tx-card[hidden] { display:none!important; }
+.tx-card-art { position:relative; display:flex; align-items:center; justify-content:center; height:174px; margin:10px 10px 0; overflow:hidden; border-radius:21px; background:linear-gradient(135deg,#e8f3e8,#d2e7d5); }
+.tx-card-art::before { content:""; position:absolute; width:240px; height:240px; right:-70px; top:-120px; border:1px solid rgba(5,99,42,.16); border-radius:50%; box-shadow:0 0 0 24px rgba(255,255,255,.11),0 0 0 48px rgba(255,255,255,.1); }
+.tx-card-art::after { content:attr(data-number); position:absolute; bottom:-24px; left:16px; color:rgba(8,85,44,.095); font:700 132px/1 'Baloo Bhaina 2',sans-serif; letter-spacing:-.07em; }
+.tx-card-art svg { position:relative; z-index:1; width:87px; height:87px; padding:21px; border:1px solid rgba(255,255,255,.72); border-radius:30px; background:rgba(253,255,251,.69); color:#167947; stroke-width:1.4; filter:drop-shadow(0 12px 17px rgba(23,87,42,.08)); }
+.tx-card[data-tone="cream"] .tx-card-art { background:linear-gradient(130deg,#f5f0df,#e8e7cf); }
+.tx-card[data-tone="mint"] .tx-card-art { background:linear-gradient(130deg,#dff2eb,#c5e8d7); }
+.tx-card[data-tone="sage"] .tx-card-art { background:linear-gradient(130deg,#e6eee5,#cadfca); }
+.tx-card-content { display:flex; flex-direction:column; flex:1; padding:27px 29px 26px; }
+.tx-card-category { color:#42815c; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; }
+.tx-card h3 { min-height:59px; margin:14px 0 10px; font:700 30px/.98 'Baloo Bhaina 2',sans-serif; letter-spacing:-.023em; }
+.tx-card-description { flex:1; margin:0; color:#637568; font-size:14px; line-height:1.72; }
+.tx-card-tags { display:flex; flex-wrap:wrap; gap:7px; min-height:32px; margin-top:24px; }
+.tx-card-tags span { padding:6px 10px; border:1px solid #dfebde; border-radius:100px; background:#fafcf8; color:#48765a; font-size:11px; }
+.tx-card-actions { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:22px; padding-top:20px; border-top:1px solid #e7ede5; }
+.tx-card-actions a { display:inline-flex; align-items:center; gap:6px; color:#0b7542; font-size:12px; font-weight:800; line-height:1.35; }
+.tx-card-actions a:hover { text-decoration:underline; }
+.tx-card-actions a svg { width:15px; height:15px; flex:0 0 auto; }
+.tx-card-actions a:last-child:not(:first-child) { color:#69806e; font-size:11px; text-align:right; }
+.tx-footnote { max-width:780px; margin:26px 0 0; color:#7a8a7e; font-size:12px; line-height:1.65; }
+.tx-process { padding:111px 0; background:#eaf1e9; }
+.tx-process-grid { display:grid; grid-template-columns:.82fr 1.18fr; gap:9%; align-items:center; }
+.tx-process-photo { position:relative; }
+.tx-process-photo>img { width:100%; height:590px; object-fit:cover; border-radius:34px; box-shadow:0 28px 57px rgba(16,70,34,.11); }
+.tx-process-photo figcaption { margin:13px 5px 0; color:#68816e; font-size:11px; }
+.tx-process-content .tx-section-title { max-width:610px; }
+.tx-steps { display:grid; gap:0; margin:33px 0 28px; }
+.tx-step { display:grid; grid-template-columns:50px 1fr; gap:17px; padding:22px 0; border-bottom:1px solid #cdddcf; }
+.tx-step:first-child { border-top:1px solid #cdddcf; }
+.tx-step>span { color:#279457; font:700 28px/.98 'Baloo Bhaina 2',sans-serif; }
+.tx-step h3 { margin:0; font-size:17px; }
+.tx-step p { margin:7px 0 0; color:#5e7664; font-size:14px; line-height:1.7; }
+.tx-reads { padding:98px 0 110px; background:#f8f9f6; }
+.tx-reads-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; margin-top:38px; }
+.tx-read { position:relative; display:flex; min-height:210px; flex-direction:column; align-items:flex-start; padding:29px 33px; border:1px solid #dbe7d8; border-radius:27px; background:#eff5eb; transition:transform .3s,box-shadow .3s; }
+.tx-read:hover { transform:translateY(-4px); box-shadow:0 18px 38px rgba(19,72,40,.07); }
+.tx-read span { color:#42825d; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
+.tx-read strong { max-width:460px; margin:20px 0 19px; font:700 clamp(25px,2.5vw,35px)/1 'Baloo Bhaina 2',sans-serif; }
+.tx-read svg { position:absolute; right:30px; bottom:28px; width:24px; height:24px; color:#08752f; }
+.tx-faq { padding:106px 0; background:#f1f5ee; }
+.tx-faq-layout { display:grid; grid-template-columns:.77fr 1.23fr; gap:9%; }
+.tx-faq-list { border-top:1px solid #cbd9ce; }
+.tx-faq-list details { border-bottom:1px solid #cbd9ce; }
+.tx-faq-list summary { position:relative; display:flex; align-items:center; justify-content:space-between; gap:18px; padding:25px 5px; color:#153e2a; font-weight:750; font-size:15px; line-height:1.5; cursor:pointer; list-style:none; }
+.tx-faq-list summary::-webkit-details-marker { display:none; }
+.tx-faq-list summary::after { content:"+"; flex:0 0 auto; color:#188247; font-size:27px; font-weight:350; line-height:1; transition:transform .24s; }
+.tx-faq-list details[open] summary::after { transform:rotate(45deg); }
+.tx-faq-list details p { max-width:650px; margin:-5px 35px 23px 5px; color:#5d7263; font-size:14px; line-height:1.75; }
+.tx-cta { padding:96px 0; background:radial-gradient(circle at 88% 15%,#137c45,#0b4b2e 57%,#073b29); color:#fff; }
+.tx-cta-layout { display:flex; align-items:center; justify-content:space-between; gap:52px; }
+.tx-cta .tx-eyebrow { color:#b8edbb; }
+.tx-cta .tx-eyebrow::before { background:#b8edbb; }
+.tx-cta h2 { max-width:720px; margin:18px 0 14px; font:700 clamp(42px,4vw,62px)/.98 'Baloo Bhaina 2',sans-serif; letter-spacing:-.025em; }
+.tx-cta p:not(.tx-eyebrow) { max-width:610px; margin:0; color:#bfd7c9; font-size:16px; line-height:1.7; }
+.tx-cta .tx-button { flex:0 0 auto; background:#d8f39f; color:#123f25!important; box-shadow:none; }
+.tx-cta .tx-button:hover { background:#c8eb82; }
+/* Tratamentos: páginas editoriais individuais */
+.tx-detail-hero { padding:56px 0 91px; background:linear-gradient(125deg,#f8faf5,#eaf3e8); }
+.tx-detail-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:9%; align-items:center; }
+.tx-detail-copy h1 { max-width:800px; margin:25px 0 22px; font:700 clamp(51px,5vw,79px)/.96 'Baloo Bhaina 2',sans-serif; letter-spacing:-.04em; }
+.tx-detail-copy h1 em { font-style:normal; color:#0d8246; }
+.tx-detail-copy>p:not(.tx-breadcrumb):not(.tx-eyebrow) { max-width:625px; margin:0; color:#54705e; font-size:17px; line-height:1.8; }
+.tx-detail-actions { display:flex; align-items:center; flex-wrap:wrap; gap:24px; margin-top:28px; }
+.tx-detail-picture { position:relative; border-radius:35px; padding:13px; background:#d2e8d0; transform:rotate(1deg); }
+.tx-detail-picture img { width:100%; height:420px; object-fit:cover; border-radius:27px; transform:rotate(-1deg); }
+.tx-detail-picture figcaption { position:absolute; right:24px; bottom:26px; padding:10px 14px; border-radius:11px; background:rgba(255,255,255,.9); color:#4c6b56; font-size:11px; }
+.tx-detail-body { padding:100px 0 110px; background:#fff; }
+.tx-detail-columns { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.83fr); gap:11%; }
+.tx-detail-intro h2,.tx-detail-aside h2 { max-width:720px; margin:16px 0 20px; font:700 clamp(34px,3.3vw,52px)/1.03 'Baloo Bhaina 2',sans-serif; }
+.tx-detail-intro p,.tx-detail-aside p { color:#5b6f62; font-size:16px; line-height:1.83; }
+.tx-detail-intro h3 { margin:33px 0 9px; font-size:19px; }
+.tx-detail-intro ul { padding-left:20px; color:#55715f; font-size:15px; line-height:1.85; }
+.tx-detail-intro li+li { margin-top:11px; }
+.tx-detail-aside { align-self:start; padding:35px; border:1px solid #dce8d9; border-radius:31px; background:#f1f6ef; }
+.tx-detail-aside h2 { font-size:34px; }
+.tx-detail-aside ol { padding-left:23px; color:#4b6a57; line-height:1.78; font-size:15px; }
+.tx-detail-aside li+li { margin-top:18px; }
+.tx-detail-next { display:flex; flex-wrap:wrap; gap:15px 25px; align-items:center; padding-top:25px; margin-top:24px; border-top:1px solid #cfdfce; }
+.tx-detail-next a { font-size:14px; font-weight:750; color:#0c763e; text-decoration:underline; text-underline-offset:4px; }
+.tx-detail-faq { padding:93px 0; background:#f5f8f2; }
+.tx-detail-faq .tx-faq-layout { grid-template-columns:.8fr 1.2fr; }
+.tx-detail-others { padding:65px 0; background:#fff; }
+.tx-detail-others-links { display:flex; flex-wrap:wrap; gap:11px; margin-top:24px; }
+.tx-detail-others-links a { display:inline-flex; min-height:42px; align-items:center; padding:10px 17px; border:1px solid #d6e3d3; border-radius:100px; color:#226342; font-size:13px; font-weight:730; transition:background .25s; }
+.tx-detail-others-links a:hover { background:#e8f5e6; }
+:where(.tx-main) :focus-visible { outline:3px solid #58b96d; outline-offset:4px; }
+@media (max-width:1120px) { .tx-hero-layout { gap:4%; min-height:550px; } .tx-hero h1 { font-size:clamp(48px,5.7vw,70px); } .tx-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .tx-process-grid { gap:6%; } .tx-detail-layout { gap:5%; } }
+@media (max-width:767px) { .tx-shell { width:calc(100% - 40px); } .tx-hero-layout,.tx-detail-layout { grid-template-columns:1fr; gap:35px; padding:20px 0 65px; min-height:0; } .tx-breadcrumb { margin-bottom:32px; } .tx-hero h1,.tx-detail-copy h1 { font-size:clamp(43px,11vw,66px); } .tx-hero-copy>p:not(.tx-breadcrumb):not(.tx-eyebrow),.tx-detail-copy>p:not(.tx-breadcrumb):not(.tx-eyebrow) { font-size:16px; } .tx-hero-actions,.tx-detail-actions { gap:18px; } .tx-hero-visual { padding:13px 8px 13px 10px; } .tx-hero-photo { height:315px; } .tx-hero-note { left:4px; bottom:28px; padding:13px 15px; } .tx-hero-note strong { font-size:17px; } .tx-catalog,.tx-process,.tx-reads,.tx-faq,.tx-detail-body,.tx-detail-faq { padding:76px 0; } .tx-catalog-header,.tx-cta-layout { align-items:flex-start; flex-direction:column; gap:20px; } .tx-section-title { font-size:clamp(38px,9.5vw,54px); } .tx-count-badge strong { font-size:40px; } .tx-filters { gap:7px; } .tx-filter { padding:10px 14px; font-size:12px; } .tx-grid,.tx-process-grid,.tx-reads-row,.tx-faq-layout,.tx-detail-columns,.tx-detail-faq .tx-faq-layout { grid-template-columns:1fr; } .tx-card-art { height:156px; } .tx-card-content { padding:23px; } .tx-card h3 { min-height:0; font-size:28px; } .tx-process-grid,.tx-faq-layout,.tx-detail-columns { gap:38px; } .tx-process-photo { margin:0; } .tx-process-photo>img { height:350px; } .tx-cta { padding:76px 0; } .tx-cta h2 { font-size:44px; } .tx-cta .tx-button { flex:auto; } .tx-detail-hero { padding:0; } .tx-detail-picture img { height:305px; } .tx-detail-aside { padding:26px; } .tx-detail-others { padding:57px 0; } }
+@media (max-width:570px) { .tx-grid { grid-template-columns:1fr; } .tx-card { border-radius:24px; } .tx-card-art { height:164px; } .tx-card-actions { flex-wrap:wrap; } .tx-faq-list summary { font-size:14px; } .tx-reads-row { gap:13px; } .tx-read { min-height:175px; } .tx-breadcrumb { font-size:12px; } }
+@media (prefers-reduced-motion:reduce) { .tx-main *, .tx-main *::before, .tx-main *::after { transition-duration:.01ms!important; animation-duration:.01ms!important; } }
