@@ -162,24 +162,6 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
 
-const navLinks = document.querySelectorAll(".r-nav-links a");
-const observedSections = document.querySelectorAll("main section[id]");
-
-if ("IntersectionObserver" in window) {
-  const navObserver = new IntersectionObserver((entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-
-    navLinks.forEach((link) => {
-      link.classList.toggle("is-active", link.getAttribute("href") === `#${visible.target.id}`);
-    });
-  }, { rootMargin: "-20% 0px -60%", threshold: [0, .2, .6] });
-
-  observedSections.forEach((section) => navObserver.observe(section));
-}
-
 const mobileMenu = document.querySelector("#mobile-menu");
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenuClose = document.querySelector(".mobile-menu-close");
