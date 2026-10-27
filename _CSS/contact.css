@@ -1,0 +1,87 @@
+/* Clinimed Odontologia — página de Contatos */
+.ct-main{--ct-ink:#082f23;--ct-green:#08752f;--ct-muted:#5e7364;--ct-ease:cubic-bezier(.22,1,.36,1);color:var(--ct-ink)}
+.ct-main a{text-decoration:none}
+.ct-shell{width:min(1320px,calc(100% - 76px));margin-inline:auto}
+.ct-kicker{display:flex;align-items:center;gap:11px;margin:0;color:#24794a;font-size:11px;font-weight:800;line-height:1.3;letter-spacing:.15em;text-transform:uppercase}
+.ct-kicker::before{content:"";width:23px;height:2px;background:#55b16a;border-radius:3px}
+.ct-title{max-width:770px;margin:19px 0 0;font:700 clamp(44px,4.4vw,68px)/.97 'Baloo Bhaina 2',sans-serif;letter-spacing:-.04em}
+.ct-body-copy{max-width:620px;margin:20px 0 0;color:var(--ct-muted);font-size:17px;line-height:1.76}
+.ct-pill{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:57px;padding:17px 24px;border:1px solid transparent;border-radius:999px;background:var(--ct-green);color:#fff!important;font-size:14px;font-weight:760;line-height:1.2;white-space:nowrap;box-shadow:0 12px 29px rgba(8,98,43,.19);transition:transform .33s var(--ct-ease),box-shadow .33s var(--ct-ease),background-color .25s}
+.ct-pill:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(8,98,43,.23);background:#065f29}
+.ct-pill svg,.ct-underlink svg{width:17px;height:17px;transition:transform .33s var(--ct-ease)}
+.ct-pill:hover svg,.ct-underlink:hover svg{transform:translate(3px,-3px)}
+.ct-underlink{display:inline-flex;align-items:center;gap:11px;padding-bottom:5px;border-bottom:1px solid rgba(8,117,47,.34);color:#146b3a!important;font-size:14px;font-weight:780}
+.ct-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 88% 16%,rgba(201,233,194,.72),transparent 43%),linear-gradient(117deg,#fbfbf7,#eaf3e9)}
+.ct-hero::before{position:absolute;right:-260px;top:-440px;width:690px;height:690px;border:1px solid rgba(13,105,55,.10);border-radius:50%;content:"";pointer-events:none}
+.ct-hero-layout{position:relative;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:8%;min-height:635px;padding:52px 0 119px}
+.ct-breadcrumb{margin:0 0 52px;color:#66836e;font-size:12px;font-weight:700}
+.ct-breadcrumb a:hover{color:#0a7940;text-decoration:underline}
+.ct-breadcrumb span{padding:0 9px;color:#a0b7a5}
+.ct-hero h1{max-width:720px;margin:24px 0 22px;font:700 clamp(54px,5.2vw,86px)/.94 'Baloo Bhaina 2',sans-serif;letter-spacing:-.047em}
+.ct-hero h1 em{display:block;color:#0b7b3c;font-style:normal}
+.ct-hero-copy>p:not(.ct-kicker):not(.ct-breadcrumb){max-width:550px;margin:0;color:#546e5c;font-size:17px;line-height:1.78}
+.ct-hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:25px;margin-top:32px}
+.ct-hero-visual{position:relative;padding:18px 18px 18px 8px;isolation:isolate}
+.ct-hero-visual::before{position:absolute;z-index:-1;inset:29px 0 0 34px;background:linear-gradient(132deg,#cce9c3,#87c395);border-radius:39% 12% 34% 15%;transform:rotate(3deg);content:""}
+.ct-hero-visual img{width:100%;height:462px;object-fit:cover;object-position:center;border-radius:40% 13% 35% 14%;box-shadow:0 30px 69px rgba(15,70,40,.16)}
+.ct-photo-caption{position:absolute;bottom:48px;left:-23px;min-width:230px;padding:17px 21px;border:1px solid rgba(255,255,255,.8);border-radius:17px;background:rgba(252,254,250,.96);box-shadow:0 18px 35px rgba(17,69,43,.13)}
+.ct-photo-caption span{display:block;color:#4d8c62;font-size:10px;font-weight:800;letter-spacing:.125em;text-transform:uppercase}
+.ct-photo-caption strong{display:block;margin-top:6px;font:700 20px/1.05 'Baloo Bhaina 2',sans-serif}
+.ct-quick{position:relative;z-index:3;margin-top:-48px;padding-bottom:112px;background:linear-gradient(to bottom,transparent 0 48px,#f7f8f4 48px 100%)}
+.ct-quick-heading{margin:0 0 25px;padding-top:72px}
+.ct-quick-heading .ct-title{font-size:clamp(38px,3.9vw,59px)}
+.ct-channels{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
+.ct-channel{position:relative;display:flex;min-width:0;min-height:293px;flex-direction:column;padding:30px;border:1px solid #dce8da;border-radius:29px;background:#fff;color:#123d29;box-shadow:0 9px 30px rgba(18,74,38,.035);transition:transform .35s var(--ct-ease),box-shadow .35s var(--ct-ease),border-color .25s}
+.ct-channel:hover{transform:translateY(-6px);border-color:#b0d4b1;box-shadow:0 23px 46px rgba(18,74,38,.10)}
+.ct-channel--main{background:radial-gradient(circle at 90% 12%,#127d49,#0b6339 56%,#08482e);border-color:rgba(16,129,68,.4);color:#fff;box-shadow:0 20px 47px rgba(8,90,43,.17)}
+.ct-channel--main:hover{box-shadow:0 29px 55px rgba(8,90,43,.25)}
+.ct-channel-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ct-channel-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:19px;background:#eaf4e8;color:#16834b}
+.ct-channel-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ct-channel-icon .ct-wa-svg{fill:currentColor;stroke:none}
+.ct-channel--main .ct-channel-icon{background:rgba(255,255,255,.16);color:#e9fdef}
+.ct-channel-mark{color:#77a388;font-size:11px;font-weight:800;letter-spacing:.12em}
+.ct-channel--main .ct-channel-mark{color:#c3e8c7}
+.ct-channel h3{margin:29px 0 5px;font:700 clamp(26px,2.7vw,36px)/1 'Baloo Bhaina 2',sans-serif;letter-spacing:-.02em}
+.ct-channel p{max-width:320px;margin:5px 0 23px;color:#667b69;font-size:14px;line-height:1.62}
+.ct-channel--main p{color:#d3e9db}
+.ct-channel .ct-contact-number{font-size:14px;font-weight:770;color:#0b7843;white-space:nowrap}
+.ct-channel--main .ct-contact-number{color:#f2fff3}
+.ct-channel-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid #e3ece1;color:#177a45;font-size:13px;font-weight:780}
+.ct-channel--main .ct-channel-bottom{border-color:rgba(255,255,255,.23);color:#edffef}
+.ct-channel-bottom svg{width:19px;height:19px;flex:0 0 auto;transition:transform .3s}
+.ct-channel:hover .ct-channel-bottom svg{transform:translate(3px,-3px)}
+.ct-location{padding:112px 0;background:#eef4eb}
+.ct-location-layout{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:9%;align-items:start}
+.ct-address-block{max-width:570px;margin-top:35px;padding:27px 0;border-top:1px solid #cedecb;border-bottom:1px solid #cedecb}
+.ct-address-block span{color:#3c8958;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.ct-address-block strong{display:block;margin:9px 0;font:700 clamp(27px,3.4vw,40px)/1.08 'Baloo Bhaina 2',sans-serif}
+.ct-address-block p{margin:0;color:#627565;font-size:15px;line-height:1.6}
+.ct-hours{max-width:570px;margin-top:32px}
+.ct-hours h3{display:flex;align-items:center;gap:10px;margin:0 0 15px;font-size:17px;font-weight:800}
+.ct-hours h3 svg{width:22px;height:22px;color:#128148}
+.ct-hours-row{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px 0;border-bottom:1px solid #d0dfcf;font-size:14px}
+.ct-hours-row span{color:#607967}
+.ct-hours-row strong{color:#173e2a;font-weight:750;white-space:nowrap}
+.ct-location-actions{display:flex;flex-wrap:wrap;align-items:center;gap:25px;margin-top:34px}
+.ct-map-wrap{position:relative}
+.ct-map{overflow:hidden;border:10px solid #fff;border-radius:31px;background:#e4ebe4;box-shadow:0 30px 65px rgba(13,69,36,.12)}
+.ct-map iframe{display:block;width:100%;height:447px;border:0}
+.ct-arrival-note{display:flex;align-items:center;gap:17px;margin-top:19px;padding:18px;border:1px solid #d3e1d1;border-radius:22px;background:rgba(255,255,255,.7)}
+.ct-arrival-note img{width:105px;height:73px;flex:0 0 auto;object-fit:cover;border-radius:13px}
+.ct-arrival-note strong{display:block;font-size:13px;color:#244f34}
+.ct-arrival-note p{margin:4px 0 0;color:#6c7e70;font-size:12px;line-height:1.55}
+.ct-final{padding:92px 0;background:radial-gradient(circle at 87% 16%,#137c46,#0a502e 55%,#073d29);color:#fff}
+.ct-final-layout{display:flex;align-items:center;justify-content:space-between;gap:54px}
+.ct-final .ct-kicker{color:#bcebc1}
+.ct-final .ct-kicker::before{background:#c7edb9}
+.ct-final h2{max-width:760px;margin:19px 0 15px;font:700 clamp(42px,4vw,64px)/.97 'Baloo Bhaina 2',sans-serif;letter-spacing:-.035em}
+.ct-final p:not(.ct-kicker){max-width:610px;margin:0;color:#c6e0d1;font-size:16px;line-height:1.7}
+.ct-final .ct-pill{flex:0 0 auto;background:#d6f298;color:#164126!important;box-shadow:none}
+.ct-final .ct-pill:hover{background:#c6e77c}
+.ct-main :focus-visible{outline:3px solid #5bc26e;outline-offset:4px}
+@media(max-width:1150px){.ct-hero-layout{gap:4%;min-height:570px}.ct-hero h1{font-size:clamp(49px,5.8vw,70px)}.ct-channels{grid-template-columns:1.15fr 1fr 1fr;gap:12px}.ct-channel{padding:25px}.ct-channel h3{font-size:29px}.ct-location-layout{gap:5%}}
+@media(max-width:850px){.ct-channels{grid-template-columns:1fr 1fr}.ct-channel--main{grid-column:1/-1;min-height:245px}.ct-channel{min-height:270px}.ct-location-layout{grid-template-columns:1fr;gap:47px}.ct-map iframe{height:390px}}
+@media(max-width:767px){.ct-shell{width:calc(100% - 40px)}.ct-hero-layout{grid-template-columns:1fr;gap:34px;min-height:0;padding:20px 0 103px}.ct-breadcrumb{margin-bottom:35px}.ct-hero h1{font-size:clamp(44px,10.5vw,64px)}.ct-hero-copy>p:not(.ct-kicker):not(.ct-breadcrumb){font-size:16px}.ct-hero-actions{gap:20px}.ct-hero-visual{padding:10px}.ct-hero-visual img{height:335px}.ct-hero-visual::before{inset:24px 3px 0 22px}.ct-photo-caption{left:0;bottom:29px;min-width:0;padding:12px 16px}.ct-photo-caption strong{font-size:17px}.ct-quick{padding-bottom:77px;margin-top:-45px}.ct-quick-heading{padding-top:70px}.ct-quick-heading .ct-title,.ct-title{font-size:clamp(37px,9.6vw,54px)}.ct-location{padding:77px 0}.ct-location-layout{gap:38px}.ct-address-block strong{font-size:32px}.ct-location-actions{gap:23px}.ct-final{padding:75px 0}.ct-final-layout{flex-direction:column;align-items:flex-start;gap:25px}.ct-final h2{font-size:43px}.ct-final .ct-pill{flex:initial}}
+@media(max-width:570px){.ct-channels{grid-template-columns:1fr}.ct-channel--main{grid-column:auto}.ct-channel{min-height:226px;padding:24px}.ct-channel h3{margin-top:21px}.ct-channel p{margin-bottom:15px}.ct-channel-bottom{padding-top:14px}.ct-map{border-width:7px;border-radius:24px}.ct-map iframe{height:325px}.ct-arrival-note img{width:90px;height:67px}.ct-hours-row{font-size:13px}.ct-breadcrumb{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.ct-main *, .ct-main *::before, .ct-main *::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
