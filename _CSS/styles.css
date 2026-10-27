@@ -1076,3 +1076,29 @@ button, a, [role="button"] {
   .footer-bottom { gap: 18px; flex-direction: column; }
   .floating-whatsapp { right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); }
 }
+
+/* Documentos legais — links discretos compartilhados por todos os rodapés. */
+.site-legal-links{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px 27px;
+  width:min(1280px,calc(100% - 40px));
+  margin:22px auto 0;
+  padding:21px 0 0;
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.site-legal-links a{
+  color:#bed6c5;
+  font-family:'Albert Sans',Arial,sans-serif;
+  font-size:12px;
+  font-weight:650;
+  line-height:1.4;
+  text-decoration:none;
+  transition:color .2s ease;
+}
+.site-legal-links a:hover{color:#d7f6aa}
+.site-legal-links a:focus-visible{outline:3px solid #a5ee91;outline-offset:5px}
+@media(max-width:767px){.site-legal-links{justify-content:flex-start;gap:14px 22px;padding-top:18px}}
+@media(prefers-reduced-motion:reduce){.site-legal-links a{transition:none}}

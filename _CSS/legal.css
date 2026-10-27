@@ -1,0 +1,58 @@
+/* Página legal editorial da Clinimed Odontologia */
+.lg-main{--lg-ink:#0b3527;--lg-muted:#596d60;--lg-line:#d8e4d7;color:var(--lg-ink)}
+.lg-shell{width:min(1280px,calc(100% - 76px));margin-inline:auto}
+.lg-breadcrumb{margin:0 0 43px;color:#69806e;font-size:13px;font-weight:650}
+.lg-breadcrumb a{color:#1c7843}.lg-breadcrumb a:hover{text-decoration:underline}
+.lg-breadcrumb span{padding:0 10px;color:#9fb4a2}
+.lg-eyebrow{display:flex;align-items:center;gap:10px;margin:0;color:#237a49;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.lg-eyebrow::before{content:"";width:23px;height:2px;border-radius:5px;background:#6fb87a}
+.lg-hero{position:relative;overflow:hidden;padding:62px 0 78px;background:radial-gradient(circle at 84% 12%,#d5eaca,transparent 34%),linear-gradient(135deg,#f8faf5,#edf3e9)}
+.lg-hero::after{position:absolute;right:-150px;top:-280px;width:560px;height:560px;border:1px solid rgba(26,122,65,.11);border-radius:50%;content:"";pointer-events:none}
+.lg-hero-layout{position:relative;z-index:1;display:grid;grid-template-columns:1fr 235px;gap:55px;align-items:end}
+.lg-hero h1{max-width:900px;margin:20px 0 13px;font:700 clamp(52px,5.4vw,82px)/.94 'Baloo Bhaina 2',sans-serif;letter-spacing:-.044em}
+.lg-hero h1 em{font-style:normal;color:#0c8146}
+.lg-hero-summary{max-width:770px;margin:20px 0 0;color:#526c5a;font-size:17px;line-height:1.7}
+.lg-version{margin:26px 0 0;color:#5f7e69;font-size:12px;font-weight:700}
+.lg-hero-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;aspect-ratio:1;border:1px solid rgba(28,115,61,.15);border-radius:38px 88px 39px 90px;background:linear-gradient(146deg,#cce9cf,#e9f6e6);box-shadow:0 20px 45px rgba(13,75,38,.06)}
+.lg-hero-mark svg{width:79px;height:79px;fill:none;stroke:#168049;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round}
+.lg-hero-mark span{margin-top:18px;color:#3e8055;font-size:10px;font-weight:800;letter-spacing:.14em}
+.lg-body{padding:91px 0 109px;background:#f8f9f5}
+.lg-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:8%;align-items:start}
+.lg-sidebar{position:sticky;top:135px;padding:25px 23px;border:1px solid #dfebdd;border-radius:25px;background:#fff;box-shadow:0 15px 30px rgba(22,72,41,.04)}
+.lg-sidebar h2{margin:0 0 19px;color:#266948;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.lg-sidebar nav{display:grid;gap:3px}
+.lg-sidebar a{display:block;padding:9px 11px;border-radius:10px;color:#5b7161;font-size:13px;line-height:1.5;transition:background .2s,color .2s}
+.lg-sidebar a:hover{background:#eaf4e8;color:#116b3b}
+.lg-sidebar .lg-other{display:block;margin-top:22px;padding-top:18px;border-top:1px solid #e1ebdf;color:#0e7840;font-size:13px;font-weight:800}
+.lg-article{max-width:805px;min-width:0}
+.lg-intro{margin:0 0 37px;padding:26px 29px;border:1px solid #cee2cc;border-radius:22px;background:#eaf4e7;color:#375a44;font-size:15px;line-height:1.78}
+.lg-intro strong{color:#125d38}
+.lg-section{scroll-margin-top:125px;padding:37px 0;border-top:1px solid var(--lg-line)}
+.lg-section:first-of-type{border-top:0}
+.lg-section h2{margin:0 0 19px;font:700 clamp(29px,3vw,40px)/1.1 'Baloo Bhaina 2',sans-serif;letter-spacing:-.025em}
+.lg-section h3{margin:26px 0 10px;font-size:17px;font-weight:780}
+.lg-section p,.lg-section li{color:#596e60;font-size:15px;line-height:1.85}
+.lg-section p{margin:0 0 17px}.lg-section p:last-child{margin-bottom:0}
+.lg-section ul,.lg-section ol{margin:15px 0 21px;padding-left:23px}
+.lg-section li{padding-left:3px}.lg-section li+li{margin-top:9px}
+.lg-section strong{color:#1b4932}
+.lg-section a{color:#08773e;text-decoration:underline;text-underline-offset:3px}
+.lg-note{margin:24px 0;padding:21px 24px;border-left:3px solid #4fa16a;border-radius:0 15px 15px 0;background:#f0f6ef;color:#4e6c57;font-size:14px;line-height:1.75}
+.lg-data-table{width:100%;border-collapse:collapse;margin:24px 0;table-layout:fixed}
+.lg-data-table th{text-align:left;padding:13px 15px;border-bottom:2px solid #9dcaa3;background:#edf5e9;color:#1d5735;font-size:12px}
+.lg-data-table td{padding:16px 15px;border-bottom:1px solid #dce7dc;color:#5a6e60;font-size:13px;line-height:1.7;vertical-align:top;overflow-wrap:anywhere}
+.lg-data-table td:first-child{font-weight:750;color:#2a6143}
+.lg-contact-box{display:grid;gap:10px;margin:24px 0 0;padding:23px 27px;border:1px solid #cfe4cf;border-radius:20px;background:#eff6ec}
+.lg-contact-box p{margin:0;font-size:14px}
+.lg-contact-box a{font-weight:780}
+.lg-ending{padding:66px 0 75px;background:radial-gradient(circle at 88% 19%,#147d48,#0b4e30 55%,#073b29);color:#fff}
+.lg-ending-layout{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.lg-ending h2{max-width:680px;margin:0;font:700 clamp(33px,3.6vw,52px)/1.02 'Baloo Bhaina 2',sans-serif}
+.lg-ending p{max-width:620px;color:#c4dfcd;font-size:14px;line-height:1.75}
+.lg-ending a{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:51px;padding:14px 24px;border-radius:99px;background:#d6f296;color:#17472d;font-size:14px;font-weight:780;white-space:nowrap;transition:transform .25s}
+.lg-ending a:hover{transform:translateY(-3px)}
+.lg-main :focus-visible{outline:3px solid #59b969;outline-offset:4px}
+@media(max-width:1000px){.lg-layout{grid-template-columns:230px minmax(0,1fr);gap:5%}.lg-hero-layout{grid-template-columns:1fr 170px}.lg-hero-mark{border-radius:30px 60px}.lg-hero-mark svg{width:64px;height:64px}}
+@media(max-width:767px){.lg-shell{width:calc(100% - 40px)}.lg-hero{padding:27px 0 64px}.lg-breadcrumb{margin-bottom:40px}.lg-hero-layout{grid-template-columns:1fr}.lg-hero-mark{display:none}.lg-hero h1{font-size:clamp(45px,11vw,67px)}.lg-hero-summary{font-size:16px}.lg-body{padding:65px 0 79px}.lg-layout{grid-template-columns:1fr;gap:32px}.lg-sidebar{position:static;padding:22px}.lg-sidebar nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 6px}.lg-section{padding:30px 0}.lg-section h2{font-size:33px}.lg-ending-layout{align-items:flex-start;flex-direction:column;gap:14px}.lg-ending{padding:62px 0}}
+@media(max-width:520px){.lg-sidebar nav{grid-template-columns:1fr}.lg-intro{padding:22px}.lg-data-table{display:block;overflow-x:auto;white-space:normal}.lg-data-table th,.lg-data-table td{min-width:115px}.lg-ending h2{font-size:38px}}
+@media(prefers-reduced-motion:reduce){.lg-main *, .lg-main *::before, .lg-main *::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
