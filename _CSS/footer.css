@@ -1,0 +1,238 @@
+/* Rodapé institucional unificado — Clinimed Odontologia */
+.clinic-footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(66px, 6.8vw, 94px) 0 0;
+  color: #e6f1e9;
+  background:
+    radial-gradient(ellipse 650px 410px at 8% 0%, rgba(39, 119, 73, .22), transparent 77%),
+    linear-gradient(115deg, #072d21 0%, #03251b 72%, #06291d 100%);
+  font-family: "Albert Sans", Arial, sans-serif;
+}
+.clinic-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, #4aaf72, #b1d98a 36%, rgba(177, 217, 138, 0) 83%);
+  opacity: .75;
+}
+.clinic-footer__inner {
+  position: relative;
+  width: min(1240px, calc(100% - 80px));
+  margin-inline: auto;
+}
+.clinic-footer__main {
+  display: grid;
+  grid-template-columns: minmax(225px, 1.2fr) minmax(150px, .85fr) minmax(185px, 1fr) minmax(175px, 1fr);
+  gap: clamp(28px, 3.8vw, 66px);
+  align-items: start;
+}
+.clinic-footer__brand-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 8px;
+}
+.clinic-footer__logo {
+  display: block;
+  width: 190px;
+  height: 91px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: .96;
+}
+.clinic-footer__intro {
+  max-width: 275px;
+  margin: 18px 0 24px;
+  color: #b7d2c2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.clinic-footer__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 44px;
+  padding: 10px 15px 10px 17px;
+  border: 1px solid rgba(195, 239, 193, .36);
+  border-radius: 100px;
+  color: #e9f8e2;
+  background: rgba(121, 184, 132, .09);
+  font-size: 12px;
+  font-weight: 710;
+  line-height: 1.35;
+  transition: border-color .25s ease, background-color .25s ease, transform .25s ease;
+}
+.clinic-footer__cta svg,
+.clinic-footer__map svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.clinic-footer__cta:hover {
+  transform: translateY(-2px);
+  border-color: rgba(192, 241, 157, .9);
+  background: rgba(121, 184, 132, .19);
+}
+.clinic-footer__heading {
+  margin: 19px 0 24px;
+  color: #f4faf4;
+  font-family: "Albert Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 780;
+  letter-spacing: .105em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.clinic-footer__heading::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin-top: 13px;
+  border-radius: 2px;
+  background: #8bd575;
+}
+.clinic-footer__links {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.clinic-footer__links a,
+.clinic-footer__contact-item,
+.clinic-footer__map {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  color: #bdd7c8;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: color .2s ease, transform .25s ease;
+}
+.clinic-footer__links a:hover,
+.clinic-footer__contact-item:hover,
+.clinic-footer__map:hover {
+  color: #d5f7b6;
+  transform: translateX(3px);
+}
+.clinic-footer__contact-item {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 18px;
+}
+.clinic-footer__meta-label {
+  display: block;
+  color: #91b19e;
+  font-size: 11px;
+  font-weight: 680;
+  letter-spacing: .035em;
+}
+.clinic-footer__contact-item span:last-child {
+  color: #e1eee5;
+  font-size: 14px;
+  font-weight: 600;
+}
+.clinic-footer__hours {
+  margin: 23px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(218, 241, 222, .13);
+  color: #bdd7c8;
+  font-size: 12px;
+  line-height: 1.85;
+}
+.clinic-footer__hours strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #e0eee2;
+  font-size: 12px;
+  font-weight: 710;
+}
+.clinic-footer__address {
+  margin: 0 0 24px;
+  color: #bdd7c8;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.95;
+}
+.clinic-footer__map {
+  align-items: center;
+  gap: 10px;
+  color: #d8f5b9;
+  font-weight: 710;
+}
+.clinic-footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 28px;
+  margin-top: clamp(54px, 6vw, 82px);
+  padding: 26px 0 calc(28px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(218, 241, 222, .16);
+}
+.clinic-footer__copy,
+.clinic-footer__region {
+  margin: 0;
+  color: #95b2a0;
+  font-size: 11px;
+  font-weight: 520;
+  line-height: 1.6;
+}
+.clinic-footer__region { text-align: right; }
+.clinic-footer__legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.clinic-footer__legal a {
+  color: #c2d9cb;
+  font-size: 11px;
+  font-weight: 640;
+  line-height: 1.6;
+  transition: color .2s ease;
+}
+.clinic-footer__legal a:hover { color: #d8f6b5; }
+.clinic-footer a:focus-visible {
+  outline: 3px solid #a5ee91;
+  outline-offset: 5px;
+}
+@media (max-width: 1050px) {
+  .clinic-footer__main {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 38px 64px;
+  }
+  .clinic-footer__links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .clinic-footer__bottom { grid-template-columns: 1fr auto; }
+  .clinic-footer__region { display: none; }
+}
+@media (max-width: 660px) {
+  .clinic-footer { padding-top: 58px; }
+  .clinic-footer__inner { width: calc(100% - 44px); }
+  .clinic-footer__main { grid-template-columns: 1fr; gap: 28px; }
+  .clinic-footer__intro { margin-top: 8px; }
+  .clinic-footer__heading { margin: 14px 0 20px; }
+  .clinic-footer__links { max-width: 410px; gap: 10px 24px; }
+  .clinic-footer__hours { max-width: 310px; }
+  .clinic-footer__bottom {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 12px;
+    margin-top: 48px;
+    padding: 23px 0 calc(28px + env(safe-area-inset-bottom, 0px));
+  }
+  .clinic-footer__legal { justify-content: flex-start; gap: 9px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .clinic-footer a { transition: none; }
+}
