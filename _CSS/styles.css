@@ -241,6 +241,44 @@ button, a, [role="button"] {
   font-weight: 680;
 }
 
+/* Composição equilibrada no desktop: logo, navegação e ação compartilham
+   o mesmo eixo, sem apertar os links nas resoluções de notebook. */
+@media (min-width: 1280px) {
+  :root {
+    --nav-frame-width: min(90vw, 1480px);
+    --nav-frame-inset: calc((100vw - var(--nav-frame-width)) / 2);
+    --nav-brand-width: clamp(166px, 12vw, 186px);
+    --nav-action-width: clamp(206px, 15vw, 252px);
+  }
+
+  .r-nav-shell {
+    left: var(--nav-frame-inset);
+    width: var(--nav-frame-width);
+  }
+
+  .r-nav-brand {
+    left: calc(var(--nav-frame-inset) + 28px);
+    width: var(--nav-brand-width);
+  }
+
+  .r-nav-links {
+    left: calc(var(--nav-frame-inset) + var(--nav-brand-width) + 50px);
+    right: calc(var(--nav-frame-inset) + var(--nav-action-width) + 42px);
+    width: auto;
+    justify-content: center;
+    gap: clamp(18px, 1.45vw, 28px);
+    font-size: clamp(13px, .96vw, 15px);
+  }
+
+  .r-nav-links a { flex: 0 0 auto; }
+
+  .r-nav-cta {
+    left: auto;
+    right: calc(var(--nav-frame-inset) + 18px);
+    width: var(--nav-action-width);
+  }
+}
+
 .r-nav-shell, .r-nav-brand, .r-nav-links, .r-nav-cta {
   animation: nav-enter 700ms var(--ease-out) backwards;
 }
