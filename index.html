@@ -12,7 +12,7 @@
     <title>Clinimed Odontologia | Votuporanga</title>
     <link rel="stylesheet" href="_CSS/styles.css?v=20" />
     <link rel="stylesheet" href="_CSS/footer.css?v=1">
-    <link rel="stylesheet" href="_CSS/hero-home.css?v=1">
+    <link rel="stylesheet" href="_CSS/hero-home.css?v=2">
 </head>
   <body>
     <main>
@@ -93,7 +93,31 @@
           </div>
         </div>
 
-        <div class="r-section-shell" aria-hidden="true"></div>
+        <div class="r-section-shell" aria-hidden="true">
+          <!-- SVG segue a mesma curva elíptica da separação entre hero e tratamentos. -->
+          <svg class="hero-liquid-divider" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="clinimed-liquid-green" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0B7A3B" />
+                <stop offset="49%" stop-color="#2FA84F" />
+                <stop offset="82%" stop-color="#63C47B" />
+                <stop offset="100%" stop-color="#8FD9A8" />
+              </linearGradient>
+              <linearGradient id="clinimed-liquid-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#E6FFE9" stop-opacity=".86" />
+                <stop offset="100%" stop-color="#B6F0C3" stop-opacity=".18" />
+              </linearGradient>
+            </defs>
+            <path class="hero-liquid-path hero-liquid-glow" pathLength="1000"
+              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-path hero-liquid-band" pathLength="1000"
+              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-path hero-liquid-highlight" pathLength="1000"
+              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-sheen" pathLength="1000"
+              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+          </svg>
+        </div>
         <p class="r-section-label">Nossos tratamentos</p>
         <h2 class="r-section-title"><span>Cuidado completo,</span><span>no seu tempo.</span></h2>
         <p class="r-section-copy">Diversas especialidades odontológicas em um só lugar,<br />com planejamento integrado e um atendimento feito para você.</p>
