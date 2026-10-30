@@ -12,7 +12,7 @@
     <title>Clinimed Odontologia | Votuporanga</title>
     <link rel="stylesheet" href="_CSS/styles.css?v=20" />
     <link rel="stylesheet" href="_CSS/footer.css?v=1">
-    <link rel="stylesheet" href="_CSS/hero-home.css?v=2">
+    <link rel="stylesheet" href="_CSS/hero-home.css?v=3">
 </head>
   <body>
     <main>
@@ -74,28 +74,33 @@
         </div>
 
         <div class="r-section-shell" aria-hidden="true">
-          <!-- SVG segue a mesma curva elíptica da separação entre hero e tratamentos. -->
-          <svg class="hero-liquid-divider" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <!-- Faixa animada sobre a curva original, de borda a borda. -->
+          <svg class="hero-liquid-divider hero-liquid-flow-v2" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
             <defs>
-              <linearGradient id="clinimed-liquid-green" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id="clinimed-liquid-body" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stop-color="#0B7A3B" />
-                <stop offset="49%" stop-color="#2FA84F" />
-                <stop offset="82%" stop-color="#63C47B" />
+                <stop offset="34%" stop-color="#168C42" />
+                <stop offset="68%" stop-color="#2FA84F" />
+                <stop offset="90%" stop-color="#6DCC84" />
                 <stop offset="100%" stop-color="#8FD9A8" />
               </linearGradient>
-              <linearGradient id="clinimed-liquid-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#E6FFE9" stop-opacity=".86" />
-                <stop offset="100%" stop-color="#B6F0C3" stop-opacity=".18" />
+              <linearGradient id="clinimed-liquid-glint" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#EAFFEE" stop-opacity=".94" />
+                <stop offset="100%" stop-color="#B1F5C5" stop-opacity=".10" />
+              </linearGradient>
+              <linearGradient id="clinimed-liquid-drop" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#45B963" stop-opacity=".20" />
+                <stop offset="58%" stop-color="#84E3A0" stop-opacity=".86" />
+                <stop offset="100%" stop-color="#D9FFE3" stop-opacity=".95" />
               </linearGradient>
             </defs>
-            <path class="hero-liquid-path hero-liquid-glow" pathLength="1000"
-              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
-            <path class="hero-liquid-path hero-liquid-band" pathLength="1000"
-              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
-            <path class="hero-liquid-path hero-liquid-highlight" pathLength="1000"
-              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
-            <path class="hero-liquid-sheen" pathLength="1000"
-              d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-layer hero-liquid-shadow" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-layer hero-liquid-depth" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-layer hero-liquid-core" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-layer hero-liquid-edge" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-current" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-crest" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
+            <path class="hero-liquid-tip" pathLength="1000" d="M 0 100 C 0 45 220 0 490 0 L 510 0 C 780 0 1000 45 1000 100" />
           </svg>
         </div>
         <p class="r-section-label">Nossos tratamentos</p>
