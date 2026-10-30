@@ -349,15 +349,27 @@
   .hero-secondary:hover, .hero-secondary:hover svg { transform: none; }
 }
 
-/* Faixa líquida da divisória: o SVG mora dentro da curva original,
-   compartilha sua largura/altura e não altera o fluxo do layout.
-   O caminho usa dois quartos de elipse, aproximando o border-radius
-   49% 49% / 20% 21% do próprio .r-section-shell. */
+/* ==========================================================================
+   Faixa líquida da divisória
+   O SVG mora dentro da curva original, compartilha sua largura/altura e não
+   altera o fluxo do layout. O caminho usa dois quartos de elipse, aproximando
+   o border-radius 49% 49% / 20% 21% do próprio .r-section-shell.
+
+   Camadas (de baixo para cima):
+   - glow      halo suave que "respira"
+   - band      corpo do líquido: preenche da borda esquerda à direita e
+               pulsa levemente de espessura
+   - highlight correntezas de luz que escorrem continuamente pela faixa
+   - sheen     gota de ponta que lidera o preenchimento e, depois, um
+               reflexo que cruza a faixa de tempos em tempos
+   ========================================================================== */
 .comp-frame .r-section-shell {
   box-shadow: none;
 }
 
 .comp-frame .hero-liquid-divider {
+  --liquid-band: 12px;
+  --liquid-ease: cubic-bezier(.62, 0, .22, 1);
   position: absolute;
   inset: 0 auto auto 0;
   z-index: 1;
@@ -376,12 +388,13 @@
   vector-effect: non-scaling-stroke;
 }
 
+/* Base: todas as camadas partem escondidas na borda esquerda. */
 .hero-liquid-divider .hero-liquid-path {
   stroke-dasharray: 1000 1000;
   stroke-dashoffset: 1000;
   animation:
-    clinimed-liquid-fill 2500ms cubic-bezier(.65, 0, .35, 1) 0ms 1 both,
-    clinimed-liquid-wave 8500ms ease-in-out 2500ms infinite;
+    clinimed-liquid-fill 2800ms var(--liquid-ease) 250ms 1 both,
+    clinimed-liquid-wave 9000ms ease-in-out 3050ms infinite;
 }
 
 .hero-liquid-divider .hero-liquid-glow {
@@ -389,20 +402,40 @@
   stroke-width: 21px;
   stroke-opacity: .32;
   filter: blur(4px);
+  animation:
+    clinimed-liquid-fill 2800ms var(--liquid-ease) 250ms 1 both,
+    clinimed-liquid-wave 9000ms ease-in-out 3050ms infinite,
+    clinimed-liquid-glow 7000ms ease-in-out 3050ms infinite;
 }
 
 .hero-liquid-divider .hero-liquid-band {
   stroke: url(#clinimed-liquid-green);
-  stroke-width: 12px;
+  stroke-width: var(--liquid-band);
   stroke-opacity: .96;
+  animation:
+    clinimed-liquid-fill 2800ms var(--liquid-ease) 250ms 1 both,
+    clinimed-liquid-wave 9000ms ease-in-out 3050ms infinite,
+    clinimed-liquid-breathe 6500ms ease-in-out 3050ms infinite;
 }
 
+/* Correntezas de luz: dois filetes que deslizam sem fim.
+   O período do tracejado (150 + 350 = 500) divide o caminho (1000) em dois
+   ciclos exatos, então o deslocamento de -500 reinicia sem salto visível. */
 .hero-liquid-divider .hero-liquid-highlight {
   stroke: url(#clinimed-liquid-highlight);
-  stroke-width: 2.4px;
-  stroke-opacity: .68;
+  stroke-width: 3px;
+  stroke-opacity: 0;
+  stroke-dasharray: 150 350;
+  stroke-dashoffset: 0;
+  animation:
+    clinimed-liquid-current-in 1400ms ease-out 2300ms 1 forwards,
+    clinimed-liquid-current 7200ms linear 2300ms infinite,
+    clinimed-liquid-wave 9000ms ease-in-out 3050ms infinite;
 }
 
+/* Gota de ponta: um pequeno brilho percorre a frente do líquido durante o
+   preenchimento (mesma curva de tempo, então acompanha a borda exata) e se
+   dissolve ao chegar à direita. Depois vira o reflexo periódico. */
 .hero-liquid-divider .hero-liquid-sheen {
   stroke: #effff0;
   stroke-width: 3px;
@@ -410,13 +443,35 @@
   stroke-dasharray: 92 3000;
   stroke-dashoffset: 92;
   animation:
-    clinimed-liquid-sheen 10000ms linear 2500ms infinite,
-    clinimed-liquid-wave 8500ms ease-in-out 2500ms infinite;
+    clinimed-liquid-front-move 2800ms var(--liquid-ease) 250ms 1 backwards,
+    clinimed-liquid-front-fade 2800ms linear 250ms 1 backwards,
+    clinimed-liquid-sheen 10000ms linear 3050ms infinite,
+    clinimed-liquid-wave 9000ms ease-in-out 3050ms infinite;
 }
 
 @keyframes clinimed-liquid-fill {
   from { stroke-dashoffset: 1000; }
   to { stroke-dashoffset: 0; }
+}
+
+/* A borda de ataque da gota coincide com a frente do preenchimento:
+   a posição da ponta é (92 - offset) + 92 de comprimento = frente. */
+@keyframes clinimed-liquid-front-move {
+  from { stroke-dashoffset: 92; }
+  to { stroke-dashoffset: -908; }
+}
+
+@keyframes clinimed-liquid-front-fade {
+  0% {
+    stroke-opacity: 0;
+    stroke-width: calc(var(--liquid-band) * 1.3);
+  }
+  8% { stroke-opacity: .9; }
+  86% { stroke-opacity: .9; }
+  100% {
+    stroke-opacity: 0;
+    stroke-width: calc(var(--liquid-band) * .55);
+  }
 }
 
 /* Oscilação de poucos pixels: o líquido respira sem se afastar
@@ -433,6 +488,27 @@
   }
 }
 
+/* A faixa incha e afina devagar, como líquido em movimento. */
+@keyframes clinimed-liquid-breathe {
+  0%, 100% { stroke-width: var(--liquid-band); }
+  50% { stroke-width: calc(var(--liquid-band) * 1.22); }
+}
+
+@keyframes clinimed-liquid-glow {
+  0%, 100% { stroke-opacity: .26; }
+  50% { stroke-opacity: .42; }
+}
+
+@keyframes clinimed-liquid-current-in {
+  from { stroke-opacity: 0; }
+  to { stroke-opacity: .78; }
+}
+
+@keyframes clinimed-liquid-current {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -500; }
+}
+
 /* Reflexo curto percorre a faixa a cada ~10 s. Fica transparente
    durante o intervalo de descanso e não reinicia o preenchimento. */
 @keyframes clinimed-liquid-sheen {
@@ -443,9 +519,8 @@
 }
 
 @media (max-width: 767px) {
-  .comp-frame .hero-liquid-divider { height: 12%; }
-  .hero-liquid-divider .hero-liquid-band { stroke-width: 7px; }
-  .hero-liquid-divider .hero-liquid-highlight { stroke-width: 1.5px; }
+  .comp-frame .hero-liquid-divider { --liquid-band: 7px; height: 12%; }
+  .hero-liquid-divider .hero-liquid-highlight { stroke-width: 1.8px; }
   .hero-liquid-divider .hero-liquid-glow {
     stroke-width: 12px;
     filter: blur(2.5px);
@@ -457,6 +532,10 @@
   .hero-liquid-divider .hero-liquid-path {
     animation: none;
     stroke-dashoffset: 0;
+  }
+  .hero-liquid-divider .hero-liquid-highlight {
+    stroke-dasharray: none;
+    stroke-opacity: .6;
   }
   .hero-liquid-divider .hero-liquid-sheen {
     animation: none;
